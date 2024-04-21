@@ -1,0 +1,126 @@
+{% extends "partials/base.html" %} {% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="card-body">
+      <h3>Ping</h3>
+      <br />
+      <form class="form" action="" method="post" role="form">
+        {% csrf_token %} {{ form.as_p }}
+
+        <button type="submit" name="submit" class="btn btn-block btn-primary">
+          Gönder
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="mt-4">
+    <div class="table-responsive table-custom-container">
+      <table class="table table-custom">
+        <tbody>
+          <tr class="flex justify-content-between">
+            {% if not error_message and status == "Online"%}
+            <td class="font-weight-bold">Status</td>
+            <td class="text-nowrap">
+              <svg
+                class="svg-inline--fa fa-circle-check fa-fw fa-sm text-success"
+                width="100px"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon=""
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                data-fa-i2svg=""
+              >
+                <path
+                  fill="currentColor"
+                  d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                ></path>
+              </svg>
+              {{status}}
+
+              <tr>
+                <td class="font-weight-bold">Tepki Süresi</td>
+                <td class="text-nowrap">{{response_time}}</td>
+              </tr>
+
+              <tr>
+                <td class="font-weight-bold">Yanıt Durum Kodu</td>
+                <td class="text-nowrap">{{response_code}}</td>
+              </tr>
+
+              {% elif status != "Online" %}
+
+              <tr>
+                <td class="font-weight-bold">Status</td>
+                <td class="text-nowrap">
+                  <svg
+                    class="svg-inline--fa fa-circle-xmark fa-fw fa-sm text-danger"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="circle-xmark"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
+                    ></path>
+                  </svg>
+                  Offline
+                </td>
+              </tr>
+              <tr>
+                <td class="font-weight-bold">ERROR</td>
+              </tr>
+
+              {% elif error_message and not status%}
+              <tbody>
+                <tr>
+                  <td class="font-weight-bold">Status</td>
+                  <td class="text-nowrap">
+                    <svg
+                      class="svg-inline--fa fa-circle-xmark fa-fw fa-sm text-danger"
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="circle-xmark"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      data-fa-i2svg=""
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
+                      ></path></svg
+                    ><!-- <i class="fas fa-fw fa-sm fa-times-circle text-danger"></i> Font Awesome fontawesome.com -->
+                    Down!
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="font-weight-bold">Error</td>
+                  <td class="text-nowrap">{{error_message}}</td>
+                </tr>
+              </tbody>
+              {% endif %}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card-body">
+    Ping servisi ile veritabanları, POP/SMTP sunucuları, internet siteleri, API
+    bağlantıları, sunucular, portlar ve benzer her şeye ping gönderebilirsiniz.
+  </div>
+</div>
+{% endblock content %}
