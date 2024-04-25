@@ -1,24 +1,25 @@
+{% load static %}
+
+{% if not 'auth' in request.path %}
 <footer class="footer app-footer">
   <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
     <div class="mb-3 mb-lg-0">
       <a
-        href="https:linkler.in/"
+        href="https://oncallkeeper.com"
         data-light-class="mb-2 footer-logo"
         data-light-tag="img"
-        data-dark-value="https://linkler.in/uploads/main/ead643cdb5080e05103f98778cdaea55.png"
         data-dark-class="mb-2 footer-logo"
         data-dark-tag="img"
         data-logo
-        data-light-value="https://linkler.in/uploads/main/85602a460df2f2b3db8f6ef4f81e6402.png"
         class="h5 footer-heading"
       >
         <img
           width="150px"
-          src="https://linkler.in/uploads/main/85602a460df2f2b3db8f6ef4f81e6402.png"
+          src="{% static "image/logo.jpg" %}"
           alt=""
         />
       </a>
-      <div class="text-muted">Copyright © 2024 Linkler.in.</div>
+      <div class="text-muted">Copyright © 2024 Takimca</div>
     </div>
     <div class="d-flex flex-column flex-lg-row">
       <div class="dropdown mb-2 ml-lg-3">
@@ -59,17 +60,17 @@
     <div class="col-12 col-lg mb-3 mb-lg-0">
       <ul class="list-style-none d-flex flex-column flex-lg-row flex-wrap m-0">
         <li class="mb-2 mr-lg-3">
-          <a href="https://linkler.in/en/blog">Blog</a>
+          <a href="#">Blog</a>
         </li>
 
         <li class="mb-2 mr-lg-3">
-          <a href="https://linkler.in/en/page/privacy-policy" target="_self"
+          <a href="#" target="_self"
             >Privacy Policy</a
           >
         </li>
         <li class="mb-2 mr-lg-3">
           <a
-            href="https://linkler.in/en/page/terms-and-conditions"
+            href="#"
             target="_self"
             >Terms &amp; Conditions</a
           >
@@ -78,10 +79,11 @@
     </div>
 
     <!--Icons-->
-    {% comment %} <div class="col-12 col-lg-auto">
+    {% comment %}
+    <div class="col-12 col-lg-auto">
       <div class="d-flex flex-wrap">
         <a
-          href="https://x.com/linkler_in"
+          href="#"
           class="mr-2 mr-lg-0 ml-lg-2 mb-2"
           target="_blank"
           data-toggle="tooltip"
@@ -94,7 +96,7 @@
             data-prefix="fab"
             data-icon="x-twitter"
             role="img"
-            xmlns="http://www.w3.org/2000/svg"
+            xmlns="#"
             viewBox="0 0 512 512"
             data-fa-i2svg=""
           >
@@ -153,22 +155,8 @@
           ><!-- <i class="fas fa-envelope fa-fw fa-lg"></i> Font Awesome fontawesome.com --></a
         >
       </div>
-    </div> {% endcomment %}
-
+    </div>
+    {% endcomment %}
   </div>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"
-  ></script>
 </footer>
+{% endif %}

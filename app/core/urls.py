@@ -19,5 +19,10 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('Ping_Service.urls')),
+    path('pingService/', include('Ping_Service.urls')),
+    path('ipControl/', include('Ip_Control.urls')),
+    path('internetProviderInterrogator/', include('Internet_Provider_Interrogator.urls')),
+    path('whoisInquiry/', include('Whois_Inquiry.urls')),
+    path('brotliController/', include('Brotli_Controller.urls')),
+    path('auth/', include('Auth.urls')),
 ]

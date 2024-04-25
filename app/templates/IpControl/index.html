@@ -1,0 +1,130 @@
+{% extends "partials/base.html" %} {% block content %}
+<div class="container">
+  <div class="row mb-4">
+    <div
+      class="col-12 col-lg d-flex align-items-center mb-3 mb-lg-0 text-truncate"
+    >
+      <h1 class="h4 m-0 text-truncate">IP Kontrol Aracı</h1>
+
+      <div class="ml-2">
+        <span
+          data-toggle="tooltip"
+          title=""
+          data-original-title="IP hakkında ayrıntıları öğrenin."
+        >
+          <svg
+            class="svg-inline--fa fa-circle-info fa-fw text-muted"
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="circle-info"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            data-fa-i2svg=""
+          >
+            <path
+              fill="currentColor"
+              d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+            ></path></svg
+          ><!-- <i class="fas fa-fw fa-info-circle text-muted"></i> Font Awesome fontawesome.com -->
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <form action="" method="post" role="form">
+        {% csrf_token %}
+        <input
+          type="hidden"
+          name="token"
+          value="28eb3f895f1127f68eed169f0e1ecdd1"
+        />
+
+        <div class="form-group">
+          <label for="ip"
+            ><svg
+              class="svg-inline--fa fa-magnifying-glass-location fa-fw fa-sm text-muted mr-1"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="magnifying-glass-location"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              data-fa-i2svg=""
+            >
+              <path
+                fill="currentColor"
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM288 176c0-44.2-35.8-80-80-80s-80 35.8-80 80c0 48.8 46.5 111.6 68.6 138.6c6 7.3 16.8 7.3 22.7 0c22.1-27 68.6-89.8 68.6-138.6zm-112 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"
+              ></path></svg
+            ><!-- <i class="fas fa-fw fa-search-location fa-sm text-muted mr-1"></i> Font Awesome fontawesome.com -->
+            IP</label
+          >
+          {{ form.as_p }}
+        </div>
+        {% if error_message %}
+        <div class="mb-3 text-danger">Verdiğiniz IP için herhangi bir ayrıntı alamadık.</div>
+        {% endif %}
+
+        <button type="submit" name="submit" class="btn btn-block btn-primary">
+          Gönder
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div
+    class="mt-4 {% if not error_message and data %}d-visible {% else %}d-none {% endif %}"
+  >
+    <div class="table-responsive table-custom-container">
+      <table class="table table-custom">
+        <tbody>
+          <tr>
+            <td class="font-weight-bold">Kıta</td>
+            <td class="text-nowrap">No Info</td>
+          </tr>
+
+          <tr>
+            <td class="font-weight-bold">Ülke</td>
+            <td class="text-nowrap">
+              {% comment %}
+              <img
+                src="https://linkler.in/themes/altum/assets/images/countries/ru.svg"
+                class="img-fluid icon-favicon mr-1"
+              />
+              {% endcomment %} {{country}}
+            </td>
+          </tr>
+
+          <tr>
+            <td class="font-weight-bold">Enlem</td>
+            <td class="text-nowrap">{{latitude}}</td>
+          </tr>
+
+          <tr>
+            <td class="font-weight-bold">Boylam</td>
+            <td class="text-nowrap">{{longitude}}</td>
+          </tr>
+
+          <tr>
+            <td class="font-weight-bold">Zaman Dilimi</td>
+            <td class="text-nowrap">{{timezone}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card mt-5">
+    <div class="card-body">
+      IP kontrol aracı ile kendi ip adresinizi öğrenebilir veya gireceğiniz
+      başka ip adresleri hakkında enlem, boylam, konum ve detaylı bilgiler
+      alabilirsiniz.
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

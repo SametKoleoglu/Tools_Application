@@ -1,0 +1,210 @@
+{% extends "partials/base.html" %} {% block content %}
+
+<div class="container">
+  <div class="d-flex flex-column align-items-center">
+    <div class="col-xs-12 col-md-10 col-lg-7 col-xl-6">
+      <div class="mb-5 text-center">
+        <a href="https://linkler.in/" class="text-decoration-none text-dark">
+          <img
+            src="https://linkler.in/uploads/main/85602a460df2f2b3db8f6ef4f81e6402.png"
+            class="img-fluid navbar-logo"
+            alt="Web Sitesi Logosu"
+          />
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="card-body p-5">
+          <h1 class="h5">Kaydol</h1>
+
+          <form action="" method="post" class="mt-4" role="form">
+            <div class="form-group">
+              <label for="name">İsim</label>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                class="form-control"
+                value=""
+                maxlength="32"
+                required="required"
+                autofocus="autofocus"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-Posta</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                class="form-control"
+                value=""
+                maxlength="128"
+                required="required"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="password">Parola</label>
+              <input
+                id="password"
+                type="password"
+                name="password"
+                class="form-control"
+                value=""
+                required="required"
+              />
+            </div>
+
+            <div class="form-group">
+              <div
+                class="g-recaptcha d-flex justify-content-center"
+                data-size="normal"
+                data-sitekey="6LeAfaQoAAAAAAyxKgve4p3gbCPT2ZybXUEF2mjf"
+              >
+                <div style="width: 304px; height: 78px">
+                  <div>
+                    <iframe
+                      title="reCAPTCHA"
+                      width="304"
+                      height="78"
+                      role="presentation"
+                      name="a-dzrhdbwah7i2"
+                      frameborder="0"
+                      scrolling="no"
+                      sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                      src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeAfaQoAAAAAAyxKgve4p3gbCPT2ZybXUEF2mjf&amp;co=aHR0cHM6Ly9saW5rbGVyLmluOjQ0Mw..&amp;hl=tr&amp;v=QoukH5jSO3sKFzVEA7Vc8VgC&amp;size=normal&amp;cb=d400yhku34fo"
+                    ></iframe>
+                  </div>
+                  <textarea
+                    id="g-recaptcha-response"
+                    name="g-recaptcha-response"
+                    class="g-recaptcha-response"
+                    style="
+                      width: 250px;
+                      height: 40px;
+                      border: 1px solid rgb(193, 193, 193);
+                      margin: 10px 25px;
+                      padding: 0px;
+                      resize: none;
+                      display: none;
+                    "
+                  ></textarea>
+                </div>
+                <iframe style="display: none"></iframe>
+              </div>
+              <input type="hidden" name="captcha" class="form-control" />
+            </div>
+
+            <div class="custom-control custom-checkbox">
+              <input
+                type="checkbox"
+                name="accept"
+                class="custom-control-input"
+                id="accept"
+                required="required"
+              />
+              <label class="custom-control-label" for="accept">
+                <small class="text-muted">
+                  Linkler.in
+                  <a
+                    href="https://linkler.in/page/terms-and-conditions"
+                    target="_blank"
+                    >Şartlar ve Koşullar</a
+                  >
+                  ve
+                  <a
+                    href="https://linkler.in/page/privacy-policy"
+                    target="_blank"
+                    >Gizlilik Politikası</a
+                  >'nı okuduğumu ve anladığımı onaylıyorum.
+                </small>
+              </label>
+            </div>
+
+            <div class="mt-3 custom-control custom-checkbox">
+              <input
+                type="checkbox"
+                name="is_newsletter_subscribed"
+                class="custom-control-input"
+                id="is_newsletter_subscribed"
+              />
+              <label
+                class="custom-control-label"
+                for="is_newsletter_subscribed"
+              >
+                <small class="text-muted">
+                  E-posta bültenine abone olarak yeni gelişmelerden haberdar
+                  olmak istiyorum.
+                </small>
+              </label>
+            </div>
+
+            <div class="form-group mt-4">
+              <button
+                type="submit"
+                name="submit"
+                class="btn btn-primary btn-block"
+              >
+                Kayıt Ol
+              </button>
+            </div>
+
+            <hr class="border-gray-100 my-3" />
+
+            <div class="">
+              <div class="mt-2">
+                <a
+                  href="https://linkler.in/login/google-initiate"
+                  class="btn btn-light btn-block"
+                >
+                  <img
+                    src="https://linkler.in/themes/altum/assets/images/google.svg"
+                    class="mr-1"
+                  />
+                  Google ile giriş yap
+                </a>
+              </div>
+              <div class="mt-2">
+                <a
+                  href="https://linkler.in/login/discord-initiate"
+                  class="btn btn-light btn-block"
+                >
+                  <img
+                    src="https://linkler.in/themes/altum/assets/images/discord.svg"
+                    class="mr-1"
+                  />
+                  Discord ile giriş yap
+                </a>
+              </div>
+              <div class="mt-2">
+                <a
+                  href="https://linkler.in/login/linkedin-initiate"
+                  class="btn btn-light btn-block"
+                >
+                  <img
+                    src="https://linkler.in/themes/altum/assets/images/linkedin.svg"
+                    class="mr-1"
+                  />
+                  LinkedIn ile giriş yap
+                </a>
+              </div>
+            </div>
+          </form>
+
+          <div class="mt-5 text-center text-muted">
+            Zaten bir hesabınız var mı?
+            <a
+              href="https://linkler.in/login?redirect=dashboard"
+              class="font-weight-bold"
+              >Giriş yap</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

@@ -4,7 +4,6 @@ from .models import Ping
 import requests
 import time
 
-
 def index(request):
     if request.method == 'POST':
         form = PingForm(request.POST)
@@ -27,12 +26,17 @@ def index(request):
                 response_code = response.status_code if response else None
 
                 status = 'Online' if response else 'Offline'
+                
+                print(response)
+                print(status)
 
                 if response_code != 200:
                     error_message = "Unable to communicate securely with peer: requested domain name does not match the server's certificate."
+                    print(error_message)
                     return render(request, 'Ping_Service/index.html', {
                         'form': form,
-                        'error_message': error_message
+                        'error_message': error_message,
+                        'status': status,
                     })
 
     
@@ -43,6 +47,7 @@ def index(request):
                     response_time=response_time,
                     response_code=response_code
                 )
+                
 
                 return render(request, 'Ping_Service/index.html', {
                     'form': form,
@@ -50,9 +55,10 @@ def index(request):
                     'url': url,
                     'response_time': response_time,
                     'response_code': response_code,
-                    'status': status
+                    'status': status,
                 })
     else:
         form = PingForm()
 
     return render(request, 'Ping_Service/index.html', {'form': form})
+
