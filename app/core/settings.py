@@ -50,7 +50,8 @@ INSTALLED_APPS = [
     'URL_Redirect_Checker',
     'Password_Security_Checker',
     'Meta_Tag_Finder',
-    'Site_Hosting_Finder'    
+    'Site_Hosting_Finder',
+    'File_Mime_Type_Query',    
 ]
 
 MIDDLEWARE = [
@@ -97,16 +98,7 @@ DATABASES = {
 }
 
 
-# DATABASES ={
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'samet_db',
-#         'USER': 'samet',
-#         'PASSWORD': 'T!773gJpN5@gD=,o',
-#         'HOST': '185.32.14.181',
-#         'PORT': '5432',
-#     }
-# }
+
 
 
 # Password validation

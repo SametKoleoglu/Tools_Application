@@ -33,5 +33,6 @@ urlpatterns = [
     path('passwordSecurityChecker/', include('Password_Security_Checker.urls')),
     path('metaTagFinder/', include('Meta_Tag_Finder.urls')),
     path('siteHostingFinder/', include('Site_Hosting_Finder.urls')),
+    path('fileMimeTypeQuery/', include('File_Mime_Type_Query.urls')),
     path('auth/', include('Auth.urls')),
 ]
