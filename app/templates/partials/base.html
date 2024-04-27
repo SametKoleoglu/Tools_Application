@@ -879,6 +879,7 @@
       rel="stylesheet"
       media="screen,print"
     />
+    
   </head>
   <body>
     <div class="container">
@@ -886,7 +887,10 @@
 
       <main class="altum-animate altum-animate-fill-none altum-animate-fade-in">
         <div class="container">
-          {% block content %} {% endblock content %}
+          {% block content %} 
+          
+          {% endblock content %}
+
 
           <div class="mt-5">
             <h2 class="h4 mb-4">Paylaş</h2>
@@ -896,7 +900,7 @@
                   class="d-flex align-items-center justify-content-between flex-wrap"
                 >
                   <a
-                    href="mailto:?body=https://linkler.in/tools/whois-lookup"
+                    href="#"
                     target="_blank"
                     class="btn btn-gray-100 mb-2 mb-md-0 mr-md-3"
                     data-toggle="tooltip"
@@ -948,7 +952,7 @@
                   </button>
 
                   <a
-                    href="https://www.facebook.com/sharer/sharer.php?u=https://linkler.in/tools/whois-lookup"
+                    href="#"
                     target="_blank"
                     class="btn btn-gray-100 mb-2 mb-md-0 mr-md-3"
                     data-toggle="tooltip"
@@ -974,7 +978,7 @@
                   </a>
 
                   <a
-                    href="https://x.com/share?url=https://linkler.in/tools/whois-lookup"
+                    href="#"
                     target="_blank"
                     class="btn btn-gray-100 mb-2 mb-md-0 mr-md-3"
                     data-toggle="tooltip"
@@ -1000,7 +1004,7 @@
                   </a>
 
                   <a
-                    href="https://pinterest.com/pin/create/link/?url=https://linkler.in/tools/whois-lookup"
+                    href="#"
                     target="_blank"
                     class="btn btn-gray-100 mb-2 mb-md-0 mr-md-3"
                     data-toggle="tooltip"
@@ -1026,7 +1030,7 @@
                   </a>
 
                   <a
-                    href="https://linkedin.com/shareArticle?url=https://linkler.in/tools/whois-lookup"
+                    href="#"
                     target="_blank"
                     class="btn btn-gray-100 mb-2 mb-md-0 mr-md-3"
                     data-toggle="tooltip"
@@ -1052,7 +1056,7 @@
                   </a>
 
                   <a
-                    href="https://www.reddit.com/submit?url=https://linkler.in/tools/whois-lookup"
+                    href="#"
                     target="_blank"
                     class="btn btn-gray-100 mb-2 mb-md-0 mr-md-3"
                     data-toggle="tooltip"
@@ -1078,7 +1082,7 @@
                   </a>
 
                   <a
-                    href="https://wa.me/?text=https://linkler.in/tools/whois-lookup"
+                    href="#"
                     class="btn btn-gray-100 mb-2 mb-md-0 mr-md-3"
                     data-toggle="tooltip"
                     title=""
@@ -1103,7 +1107,7 @@
                   </a>
 
                   <a
-                    href="https://t.me/share/url?url=https://linkler.in/tools/whois-lookup"
+                    href="#"
                     class="btn btn-gray-100 mb-2 mb-md-0 mr-md-3"
                     data-toggle="tooltip"
                     title=""
@@ -1135,6 +1139,25 @@
 
       {% include "partials/_footer.html" %}
     </div>
+
+    <script>
+      /* Some global variables */
+      window.altum = {};
+      let global_token = document.querySelector(
+        'input[name="global_token"]'
+      ).value;
+      let site_url = document.querySelector(
+        'input[name="global_site_url"]'
+      ).value;
+      let url = document.querySelector('input[name="global_url"]').value;
+      let decimal_point = document.querySelector(
+        '[name="global_number_decimal_point"]'
+      ).value;
+      let thousands_separator = document.querySelector(
+        '[name="global_number_thousands_separator"]'
+      ).value;
+    </script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -1150,5 +1173,7 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <script src="https://linkler.in/themes/altum/assets/js/libraries/jquery.min.js?v=4600"></script>
+    <script src="https://linkler.in/themes/altum/assets/js/libraries/bootstrap.min.js?v=4600"></script>
   </body>
 </html>

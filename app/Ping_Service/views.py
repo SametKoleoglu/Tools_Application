@@ -6,6 +6,7 @@ import time
 
 def index(request):
     if request.method == 'POST':
+        response = ""
         form = PingForm(request.POST)
         if form.is_valid():
             protocol = form.cleaned_data['protocol']

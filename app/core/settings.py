@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-%7cf$+ho7^tcwzy#awyp^31+kji__&r=vc-n7wveua-kazq(v8'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,11 +37,20 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'index',
     'Ping_Service',
     'Auth',
     'Ip_Control',
     'Whois_Inquiry',
     'Brotli_Controller',
+    'SSL_Querier',
+    'HTTP2_Controller',
+    'Secure_Connection_Inquiry',
+    'Google_Cache_Checker',
+    'URL_Redirect_Checker',
+    'Password_Security_Checker',
+    'Meta_Tag_Finder',
+    'Site_Hosting_Finder'    
 ]
 
 MIDDLEWARE = [
@@ -86,6 +95,18 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+
+# DATABASES ={
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'samet_db',
+#         'USER': 'samet',
+#         'PASSWORD': 'T!773gJpN5@gD=,o',
+#         'HOST': '185.32.14.181',
+#         'PORT': '5432',
+#     }
+# }
 
 
 # Password validation

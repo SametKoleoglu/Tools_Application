@@ -5,10 +5,10 @@ import requests
 
 def index(request):
     message = ""
+    error = None
+    isActive = None
     if request.method == 'POST':
         form = BrotliCheckForm(request.POST)
-        error = None
-        isActive = False
         if form.is_valid():
             url = form.cleaned_data['url']
             try:
@@ -21,6 +21,7 @@ def index(request):
                 else:
                     message = f"{
                         url} adresindeki sayfa Brotli sıkıştırma algoritmasını kullanmıyor."
+                    isActive = False
             except requests.exceptions.RequestException as e:
                 message = f"Hata oluştu: {e}"
                 error = True
