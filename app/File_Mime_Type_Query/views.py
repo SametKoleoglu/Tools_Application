@@ -20,7 +20,7 @@ def index(request):
                 'form': form,
                 'file': file
             }
-            return render(request, 'File_Mime_Type_Query/index.html', context)
+            return render(request, 'AuditingTools/FileMimeTypeQuery.html', context)
     else:
         form = FileUploadForm()
-    return render(request, 'File_Mime_Type_Query/index.html', {'form': form})
+    return render(request, 'AuditingTools/FileMimeTypeQuery.html', {'form': form})

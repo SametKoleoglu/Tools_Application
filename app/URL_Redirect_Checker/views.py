@@ -21,9 +21,9 @@ def index(request):
                 'redirect_history': redirect_history,
                 'form': form,
             }
-            return render(request, 'URL_Redirect_Checker/index.html', context)
+            return render(request, 'AuditingTools/URLRedirectChecker.html', context)
         except (requests.exceptions.RequestException, urllib3.exceptions.LocationParseError) as e:
             error = f'Error: {e}'
-            return render(request, 'URL_Redirect_Checker/index.html', {'form': form, 'error': error})
+            return render(request, 'AuditingTools/URLRedirectChecker.html', {'form': form, 'error': error})
 
-    return render(request, 'URL_Redirect_Checker/index.html', {'form': form})
+    return render(request, 'AuditingTools/URLRedirectChecker.html', {'form': form})

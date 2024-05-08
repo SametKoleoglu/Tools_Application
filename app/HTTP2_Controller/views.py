@@ -25,4 +25,4 @@ def index(request):
                 error = True
     else:
         form = HTTP2ControllerForm()
-    return render(request, 'HTTP2_Controller/index.html', {'form': form, 'result': result,'error': error})
+    return render(request, 'AuditingTools/HTTP2Controller.html', {'form': form, 'result': result,'error': error})

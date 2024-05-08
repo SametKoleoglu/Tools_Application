@@ -1,0 +1,128 @@
+{% extends "partials/base.html" %} {% block content %}
+
+<div class="row mb-4">
+  <div
+    class="col-12 col-lg d-flex align-items-center mb-3 mb-lg-0 text-truncate"
+  >
+    <h1 class="h4 m-0 text-truncate">Metni Baş Aşağıya Çevirme Aracı</h1>
+
+    <div class="ml-2">
+      <span
+        data-toggle="tooltip"
+        title=""
+        data-original-title="Metni kolaylıkla baş aşağı çevirin."
+      >
+        <svg
+          class="svg-inline--fa fa-circle-info fa-fw text-muted"
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fas"
+          data-icon="circle-info"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          data-fa-i2svg=""
+        >
+          <path
+            fill="currentColor"
+            d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+          ></path></svg
+        ><!-- <i class="fas fa-fw fa-info-circle text-muted"></i> Font Awesome fontawesome.com -->
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <form action="" method="post" role="form">
+      {% csrf_token %}
+
+      <div class="form-group">
+        <label for="text"
+          ><svg
+            class="svg-inline--fa fa-paragraph fa-fw fa-sm text-muted mr-1"
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="paragraph"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            data-fa-i2svg=""
+          >
+            <path
+              fill="currentColor"
+              d="M192 32h64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H384l0 352c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-352H288V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H192c-88.4 0-160-71.6-160-160s71.6-160 160-160z"
+            ></path>
+          </svg>
+          Metin</label
+        >
+
+        {{form.text}}
+      </div>
+
+      
+        <label class="justify-content-center text-center align-items-center" for="reverse">
+            {{form.flip_text}}   Metni Ters Çevir
+        </label>
+      
+
+      <button type="submit" name="submit" class="btn btn-block btn-primary">
+        Gönder
+      </button>
+    </form>
+  </div>
+</div>
+
+{% if click %}
+<div class="mt-4">
+  <div class="card">
+    <div class="card-body">
+      <div class="form-group">
+        <div class="d-flex justify-content-between align-items-center">
+          <label for="result">Ters Çevrilmiş</label>
+          <div>
+            <button
+              type="button"
+              class="btn btn-link text-secondary"
+              data-toggle="tooltip"
+              title=""
+              aria-label="Panoya Kopyala"
+              data-copy="Panoya Kopyala"
+              data-copied="Kopyalandı!"
+              data-clipboard-target="#result"
+              data-clipboard-text=""
+              data-original-title="Panoya Kopyala"
+            >
+              <svg
+                class="svg-inline--fa fa-copy fa-fw fa-sm"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="copy"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                data-fa-i2svg=""
+              >
+                <path
+                  fill="currentColor"
+                  d="M208 0H332.1c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9V336c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V48c0-26.5 21.5-48 48-48zM48 128h80v64H64V448H256V416h64v48c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <textarea id="result" class="form-control">{{flipped_text}}</textarea>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<div class="card mt-5">
+  <div class="card-body">Metni kolaylıkla baş aşağı çevirin.</div>
+</div>
+
+{% endblock content %}

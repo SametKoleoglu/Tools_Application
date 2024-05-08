@@ -1,0 +1,88 @@
+{% extends "partials/base.html" %} 
+
+{% block header %}Dosya Mime Türü Sorgulama{% endblock header %}
+
+{% block content %}
+
+
+<div class="card">
+  <div class="card-body">
+    <form
+      action=""
+      method="post"
+      role="form"
+      enctype="multipart/form-data"
+      data-gtm-form-interact-id="0"
+    >
+      {% csrf_token %}
+
+      <div class="form-group">
+        <label for="file"
+          ><svg
+            class="svg-inline--fa fa-file fa-fw fa-sm text-muted mr-1"
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="file"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+            data-fa-i2svg=""
+          >
+            <path
+              fill="currentColor"
+              d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"
+            ></path></svg
+          ><!-- <i class="fas fa-fw fa-sm fa-file text-muted mr-1"></i> Font Awesome fontawesome.com -->
+          Dosya</label
+        >
+        {{form}}
+      </div>
+
+      <button
+        type="submit"
+        name="submit"
+        class="btn btn-block btn-primary"
+        data-is-ajax=""
+        data-inner-text="R8O2bmRlcg=="
+      >
+        Gönder
+      </button>
+    </form>
+  </div>
+</div>
+
+{% if file %}
+<div id="result_wrapper" class="mt-4">
+  <div class="table-responsive table-custom-container">
+    <table class="table table-custom">
+      <tbody>
+        <tr>
+          <td class="font-weight-bold">İsim</td>
+          <td class="text-nowrap" id="file_name">{{file_name}}</td>
+        </tr>
+        <tr>
+          <td class="font-weight-bold">Boyut</td>
+          <td class="text-nowrap" id="file_size">{{file_size}}</td>
+        </tr>
+        <tr>
+          <td class="font-weight-bold">Tür</td>
+          <td class="text-nowrap" id="file_type">{{file_type}}</td>
+        </tr>
+        <tr>
+          <td class="font-weight-bold">Son Düzenleme Tarihi</td>
+          <td class="text-nowrap" id="file_last_modified_date">
+            {{file_last_modified}}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endif %}
+
+
+{% endblock %}
+
+{% block cardContent %}Bir dosyanın mime bilgileri ve son düzenleme tarihlerine kadar ayrıntılar
+sunan etkili bir araç.{% endblock cardContent %}

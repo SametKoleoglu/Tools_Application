@@ -24,10 +24,10 @@ def index(request):
                 'cache_status': cache_status,
                 'form': form,
             }
-            return render(request, 'Google_Cache_Checker/index.html', context)
+            return render(request, 'AuditingTools/GoogleCacheChecker.html', context)
 
         except requests.exceptions.RequestException as e:
             error = f'Error: {e}'
-            return render(request, 'Google_Cache_Checker/index.html', {'form': form, 'error': error})
+            return render(request, 'AuditingTools/GoogleCacheChecker.html', {'form': form, 'error': error})
 
-    return render(request, 'Google_Cache_Checker/index.html', {'form': form})
+    return render(request, 'AuditingTools/GoogleCacheChecker.html', {'form': form})

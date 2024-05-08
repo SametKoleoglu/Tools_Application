@@ -36,8 +36,8 @@ def index(request):
                     'updated_date': updated_date if updated_date else 'N/A',
                     'status': domain_info.get('status', 'N/A'),
                 }
-                return render(request, 'Whois_Inquiry/index.html', context)
+                return render(request, 'AuditingTools/WhoisInquiry.html', context)
             except Exception as e:
                 error_message = f'Error fetching WHOIS data: {str(e)}'
-                return render(request, 'Whois_Inquiry/index.html', {'form': form, 'error_message': error_message})
-    return render(request, 'Whois_Inquiry/index.html', {'form': form})
+                return render(request, 'AuditingTools/WhoisInquiry.html', {'form': form, 'error_message': error_message})
+    return render(request, 'AuditingTools/WhoisInquiry.html', {'form': form})

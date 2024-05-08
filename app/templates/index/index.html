@@ -1,58 +1,13 @@
-{% extends "partials/base.html" %} {% block content %}
+{% extends "partials/base.html" %}
+
+{% block header %}Araçlar{% endblock header %}
+
+{% block content %}
 
 <main class="altum-animate altum-animate-fill-none altum-animate-fade-in">
   <div class="container">
-    <div class="row mb-4">
-
-      <div
-        class="col-12 col-lg d-flex align-items-center mb-3 mb-lg-0 text-truncate"
-      >
-        <h1 class="h4 m-0 text-truncate">
-          <svg
-            class="svg-inline--fa fa-screwdriver-wrench fa-fw fa-xs mr-1"
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="fas"
-            data-icon="screwdriver-wrench"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
-            data-fa-i2svg=""
-          >
-            <path
-              fill="currentColor"
-              d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4h54.1l109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109V104c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7H352c-8.8 0-16-7.2-16-16V102.6c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"
-            ></path></svg
-          ><!-- <i class="fas fa-fw fa-xs fa-screwdriver-wrench mr-1"></i> Font Awesome fontawesome.com -->
-          Araçlar
-        </h1>
-
-        <div class="ml-2">
-          <span
-            data-toggle="tooltip"
-            title=""
-            data-original-title="Test etmenize, dönüştürmenize, hesaplamanıza ve farklı türden şeyler oluşturmanıza yardımcı olan web araçları."
-          >
-            <svg
-              class="svg-inline--fa fa-circle-info fa-fw text-muted"
-              aria-hidden="true"
-              focusable="false"
-              data-prefix="fas"
-              data-icon="circle-info"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              data-fa-i2svg=""
-            >
-              <path
-                fill="currentColor"
-                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
-              ></path></svg
-            ><!-- <i class="fas fa-fw fa-info-circle text-muted"></i> Font Awesome fontawesome.com -->
-          </span>
-        </div>
-      </div>
-    </div>
+    
+    
 
     <form action="" method="get" role="form">
       <div class="form-group">
@@ -92,13 +47,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
                   ></path></svg
-                ><!-- <i class="fas fa-check-square fa-fw" style="color: #d72cef"></i> Font Awesome fontawesome.com -->
+                >
               </div>
 
               <div class="text-truncate ml-3">
@@ -132,13 +87,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z"
                   ></path></svg
-                ><!-- <i class="fas fa-fw fa-lg fa-circle-chevron-down"></i> Font Awesome fontawesome.com -->
+                >
               </a>
             </div>
           </div>
@@ -176,13 +131,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M256 64H384v64H256V64zM240 0c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48h48v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32H80c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H240c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H192V288H448v32H400c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H560c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H512V288h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V192h48c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H240zM96 448V384H224v64H96zm320-64H544v64H416V384z"
                   ></path></svg
-                ><!-- <i class="fas fa-network-wired fa-fw" style="color: #d72cef"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
@@ -214,13 +169,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
                   ></path></svg
-                ><!-- <i class="fas fa-fw fa-sm fa-eye mr-1"></i> Font Awesome fontawesome.com -->
+                >
                 11
               </div>
             </div>
@@ -254,13 +209,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM288 176c0-44.2-35.8-80-80-80s-80 35.8-80 80c0 48.8 46.5 111.6 68.6 138.6c6 7.3 16.8 7.3 22.7 0c22.1-27 68.6-89.8 68.6-138.6zm-112 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"
                   ></path></svg
-                ><!-- <i class="fas fa-search-location fa-fw" style="color: #d72cef"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
@@ -292,13 +247,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
                   ></path></svg
-                ><!-- <i class="fas fa-fw fa-sm fa-eye mr-1"></i> Font Awesome fontawesome.com -->
+                >
                 12
               </div>
             </div>
@@ -332,7 +287,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -371,7 +326,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -412,13 +367,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"
                   ></path></svg
-                ><!-- <i class="fas fa-lock fa-fw" style="color: #d72cef"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
@@ -450,7 +405,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -489,13 +444,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M48 256C48 141.1 141.1 48 256 48c63.1 0 119.6 28.1 157.8 72.5c8.6 10.1 23.8 11.2 33.8 2.6s11.2-23.8 2.6-33.8C403.3 34.6 333.7 0 256 0C114.6 0 0 114.6 0 256v40c0 13.3 10.7 24 24 24s24-10.7 24-24V256zm458.5-52.9c-2.7-13-15.5-21.3-28.4-18.5s-21.3 15.5-18.5 28.4c2.9 13.9 4.5 28.3 4.5 43.1v40c0 13.3 10.7 24 24 24s24-10.7 24-24V256c0-18.1-1.9-35.8-5.5-52.9zM256 80c-19 0-37.4 3-54.5 8.6c-15.2 5-18.7 23.7-8.3 35.9c7.1 8.3 18.8 10.8 29.4 7.9c10.6-2.9 21.8-4.4 33.4-4.4c70.7 0 128 57.3 128 128v24.9c0 25.2-1.5 50.3-4.4 75.3c-1.7 14.6 9.4 27.8 24.2 27.8c11.8 0 21.9-8.6 23.3-20.3c3.3-27.4 5-55 5-82.7V256c0-97.2-78.8-176-176-176zM150.7 148.7c-9.1-10.6-25.3-11.4-33.9-.4C93.7 178 80 215.4 80 256v24.9c0 24.2-2.6 48.4-7.8 71.9C68.8 368.4 80.1 384 96.1 384c10.5 0 19.9-7 22.2-17.3c6.4-28.1 9.7-56.8 9.7-85.8V256c0-27.2 8.5-52.4 22.9-73.1c7.2-10.4 8-24.6-.2-34.2zM256 160c-53 0-96 43-96 96v24.9c0 35.9-4.6 71.5-13.8 106.1c-3.8 14.3 6.7 29 21.5 29c9.5 0 17.9-6.2 20.4-15.4c10.5-39 15.9-79.2 15.9-119.7V256c0-28.7 23.3-52 52-52s52 23.3 52 52v24.9c0 36.3-3.5 72.4-10.4 107.9c-2.7 13.9 7.7 27.2 21.8 27.2c10.2 0 19-7 21-17c7.7-38.8 11.6-78.3 11.6-118.1V256c0-53-43-96-96-96zm24 96c0-13.3-10.7-24-24-24s-24 10.7-24 24v24.9c0 59.9-11 119.3-32.5 175.2l-5.9 15.3c-4.8 12.4 1.4 26.3 13.8 31s26.3-1.4 31-13.8l5.9-15.3C267.9 411.9 280 346.7 280 280.9V256z"
                   ></path></svg
-                ><!-- <i class="fas fa-fingerprint fa-fw" style="color: #d72cef"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
@@ -529,13 +484,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
                   ></path></svg
-                ><!-- <i class="fas fa-fw fa-sm fa-eye mr-1"></i> Font Awesome fontawesome.com -->
+                >
                 8
               </div>
             </div>
@@ -569,13 +524,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M64 32C28.7 32 0 60.7 0 96v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm48 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM64 288c-35.3 0-64 28.7-64 64v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V352c0-35.3-28.7-64-64-64H64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm56 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"
                   ></path></svg
-                ><!-- <i class="fas fa-server fa-fw" style="color: #d72cef"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
@@ -607,13 +562,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
                   ></path></svg
-                ><!-- <i class="fas fa-fw fa-sm fa-eye mr-1"></i> Font Awesome fontawesome.com -->
+                >
                 11
               </div>
             </div>
@@ -647,19 +602,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M192 32c17.7 0 32 14.3 32 32V199.5l111.5-66.9c15.2-9.1 34.8-4.2 43.9 11s4.2 34.8-11 43.9L254.2 256l114.3 68.6c15.2 9.1 20.1 28.7 11 43.9s-28.7 20.1-43.9 11L224 312.5V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V312.5L48.5 379.4c-15.2 9.1-34.8 4.2-43.9-11s-4.2-34.8 11-43.9L129.8 256 15.5 187.4c-15.2-9.1-20.1-28.7-11-43.9s28.7-20.1 43.9-11L160 199.5V64c0-17.7 14.3-32 32-32z"
                   ></path></svg
-                ><!-- <i class="fas fa-asterisk fa-fw" style="color: #d72cef"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="#"
+                href="{% url "header_querier" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>HTTP Header Sorgulama</strong>
@@ -686,7 +641,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -725,7 +680,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -764,7 +719,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -804,7 +759,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -843,7 +798,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -882,7 +837,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 488 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -922,7 +877,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -960,7 +915,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -999,7 +954,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1038,7 +993,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1077,7 +1032,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1115,7 +1070,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1153,7 +1108,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1191,7 +1146,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1229,7 +1184,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1268,7 +1223,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1306,7 +1261,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1345,7 +1300,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1384,7 +1339,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1396,6 +1351,7 @@
             </div>
           </div>
         </div>
+
 
         <div
           class="col-12 col-lg-6 mb-4 position-relative"
@@ -1422,7 +1378,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1434,7 +1390,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/gravatar-checker"
+                href="#"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Gravatar kontrol edici</strong>
@@ -1461,7 +1417,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1498,7 +1454,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1538,13 +1494,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z"
                   ></path></svg
-                ><!-- <i class="fas fa-fw fa-lg fa-circle-chevron-down"></i> Font Awesome fontawesome.com -->
+                >
               </a>
             </div>
           </div>
@@ -1577,7 +1533,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1589,7 +1545,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/text-separator"
+                href="#"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Metin Ayırıcı</strong>
@@ -1616,7 +1572,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1654,19 +1610,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
                   ></path></svg
-                ><!-- <i class="fas fa-envelope fa-fw" style="color: #64748b"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/email-extractor"
+                href="{% url "email_extractor" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>E-Posta Ayıklama Aracı</strong>
@@ -1692,7 +1648,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1730,7 +1686,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1742,7 +1698,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/url-extractor"
+                href="{% url "url_extractor" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Bağlantı Ayıklama Aracı</strong>
@@ -1768,7 +1724,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1806,19 +1762,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M64 128V96H192l0 128H176c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H256l0-128H384v32c0 17.7 14.3 32 32 32s32-14.3 32-32V80c0-26.5-21.5-48-48-48H224 48C21.5 32 0 53.5 0 80v48c0 17.7 14.3 32 32 32s32-14.3 32-32zM9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3l64 64c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V416H320v32c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l64-64c12.5-12.5 12.5-32.8 0-45.3l-64-64c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6v32H128V320c0-12.9-7.8-24.6-19.8-29.6s-25.7-2.2-34.9 6.9l-64 64z"
                   ></path></svg
-                ><!-- <i class="fas fa-text-width fa-fw" style="color: #64748b"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/text-size-calculator"
+                href="{% url "text_size_calculator" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Metin Boyutu Hesaplama Aracı</strong>
@@ -1845,7 +1801,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1883,19 +1839,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L355.7 253.5 400.2 96H503L497 120.2c-4.3 17.1 6.1 34.5 23.3 38.8s34.5-6.1 38.8-23.3l11-44.1C577.6 61.3 554.7 32 523.5 32H376.1h-.3H204.5c-22 0-41.2 15-46.6 36.4l-6.3 25.2L38.8 5.1zm168 131.7c.1-.3 .2-.7 .3-1L217 96H333.7L301.3 210.8l-94.5-74.1zM243.3 416H192c-17.7 0-32 14.3-32 32s14.3 32 32 32H352c17.7 0 32-14.3 32-32s-14.3-32-32-32H309.8l17.6-62.1L272.9 311 243.3 416z"
                   ></path></svg
-                ><!-- <i class="fas fa-remove-format fa-fw" style="color: #64748b"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/duplicate-lines-remover"
+                href="{% url "repeat_row_query" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Tekrar Eden Satır Sorgulama</strong>
@@ -1921,7 +1877,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1959,7 +1915,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -1971,7 +1927,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/text-to-speech"
+                href="#"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Text to Speech</strong>
@@ -1998,7 +1954,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -2036,19 +1992,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M128 64c0-17.7 14.3-32 32-32H352c17.7 0 32 14.3 32 32s-14.3 32-32 32H293.3L160 416h64c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H90.7L224 96H160c-17.7 0-32-14.3-32-32z"
                   ></path></svg
-                ><!-- <i class="fas fa-italic fa-fw" style="color: #64748b"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/idn-punnycode-converter"
+                href="{% url "idn_punnycode_converter" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>IDN Punnycode Çeviricisi</strong>
@@ -2074,7 +2030,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -2087,6 +2043,7 @@
           </div>
         </div>
 
+        
         <div
           class="col-12 col-lg-6 mb-4 position-relative"
           data-tool-id="case_converter"
@@ -2112,7 +2069,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -2124,7 +2081,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/case-converter"
+                href="{% url "text_converter" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Metin Dönüştürücü</strong>
@@ -2151,7 +2108,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -2189,7 +2146,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -2201,7 +2158,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/character-counter"
+                href="{% url "character_word_counter" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Karakter / Kelime Sayıcı</strong>
@@ -2227,7 +2184,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -2265,19 +2222,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M403.8 34.4c12-5 25.7-2.2 34.9 6.9l64 64c6 6 9.4 14.1 9.4 22.6s-3.4 16.6-9.4 22.6l-64 64c-9.2 9.2-22.9 11.9-34.9 6.9s-19.8-16.6-19.8-29.6V160H352c-10.1 0-19.6 4.7-25.6 12.8L284 229.3 244 176l31.2-41.6C293.3 110.2 321.8 96 352 96h32V64c0-12.9 7.8-24.6 19.8-29.6zM164 282.7L204 336l-31.2 41.6C154.7 401.8 126.2 416 96 416H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H96c10.1 0 19.6-4.7 25.6-12.8L164 282.7zm274.6 188c-9.2 9.2-22.9 11.9-34.9 6.9s-19.8-16.6-19.8-29.6V416H352c-30.2 0-58.7-14.2-76.8-38.4L121.6 172.8c-6-8.1-15.5-12.8-25.6-12.8H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H96c30.2 0 58.7 14.2 76.8 38.4L326.4 339.2c6 8.1 15.5 12.8 25.6 12.8h32V320c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l64 64c6 6 9.4 14.1 9.4 22.6s-3.4 16.6-9.4 22.6l-64 64z"
                   ></path></svg
-                ><!-- <i class="fas fa-random fa-fw" style="color: #64748b"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/list-randomizer"
+                href="{% url "random_list_tool" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Rastgele Liste Aracı</strong>
@@ -2304,7 +2261,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -2342,19 +2299,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M256 64c53 0 96 43 96 96s-43 96-96 96s-96 43-96 96s43 96 96 96C150 448 64 362 64 256S150 64 256 64zm0 448A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm32-352a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"
                   ></path></svg
-                ><!-- <i class="fas fa-yin-yang fa-fw" style="color: #64748b"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/reverse-words"
+                href="{% url "reverse_transcription_tool" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Ters Yazıya Çevirme Aracı</strong>
@@ -2381,7 +2338,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -2419,19 +2376,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M448 64c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32zm0 256c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32zM0 192c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
                   ></path></svg
-                ><!-- <i class="fas fa-align-right fa-fw" style="color: #64748b"></i> Font Awesome fontawesome.com -->
+                ><
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/reverse-letters"
+                href="#"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Harfleri Tersinden Yazdırma Aracı</strong>
@@ -2458,13 +2415,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
                   ></path></svg
-                ><!-- <i class="fas fa-fw fa-sm fa-eye mr-1"></i> Font Awesome fontawesome.com -->
+                >
                 7
               </div>
             </div>
@@ -2496,19 +2453,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M500.3 7.3C507.7 13.3 512 22.4 512 32V176c0 26.5-28.7 48-64 48s-64-21.5-64-48s28.7-48 64-48V71L352 90.2V208c0 26.5-28.7 48-64 48s-64-21.5-64-48s28.7-48 64-48V64c0-15.3 10.8-28.4 25.7-31.4l160-32c9.4-1.9 19.1 .6 26.6 6.6zM74.7 304l11.8-17.8c5.9-8.9 15.9-14.2 26.6-14.2h61.7c10.7 0 20.7 5.3 26.6 14.2L213.3 304H240c26.5 0 48 21.5 48 48V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V352c0-26.5 21.5-48 48-48H74.7zM192 408a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM478.7 278.3L440.3 368H496c6.7 0 12.6 4.1 15 10.4s.6 13.3-4.4 17.7l-128 112c-5.6 4.9-13.9 5.3-19.9 .9s-8.2-12.4-5.3-19.2L391.7 400H336c-6.7 0-12.6-4.1-15-10.4s-.6-13.3 4.4-17.7l128-112c5.6-4.9 13.9-5.3 19.9-.9s8.2 12.4 5.3 19.2zm-339-59.2c-6.5 6.5-17 6.5-23 0L19.9 119.2c-28-29-26.5-76.9 5-103.9c27-23.5 68.4-19 93.4 6.5l10 10.5 9.5-10.5c25-25.5 65.9-30 93.9-6.5c31 27 32.5 74.9 4.5 103.9l-96.4 99.9z"
                   ></path></svg
-                ><!-- <i class="fas fa-icons fa-fw" style="color: #64748b"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/emojis-remover"
+                href="{% url "emoji_removal_tool" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Emoji Kaldırma Aracı</strong>
@@ -2534,7 +2491,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -2572,7 +2529,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -2584,7 +2541,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/reverse-list"
+                href="{% url "reverse_list_tool" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Ters Liste Aracı</strong>
@@ -2610,7 +2567,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -2648,7 +2605,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -2660,7 +2617,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/list-alphabetizer"
+                href="{% url "alphabetical_list_tool" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Alfabetik Liste Aracı</strong>
@@ -2687,7 +2644,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -2725,19 +2682,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z"
                   ></path></svg
-                ><!-- <i class="fas fa-quote-left fa-fw" style="color: #64748b"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/upside-down-text-generator"
+                href="{% url "flip_text_upside_down_tool" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Metni Baş Aşağıya Çevirme Aracı</strong>
@@ -2763,7 +2720,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -2801,19 +2758,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M254 52.8C249.3 40.3 237.3 32 224 32s-25.3 8.3-30 20.8L57.8 416H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32h-1.8l18-48H303.8l18 48H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H390.2L254 52.8zM279.8 304H168.2L224 155.1 279.8 304z"
                   ></path></svg
-                ><!-- <i class="fas fa-font fa-fw" style="color: #64748b"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/old-english-text-generator"
+                href="{% url "old_english_translation_tool" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Eski İngilizceye Çevirme Aracı</strong>
@@ -2839,7 +2796,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -2877,7 +2834,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -2889,7 +2846,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/cursive-text-generator"
+                href="#-text-generator"
                 class="stretched-link text-decoration-none"
               >
                 <strong>El Yazısına Çevirme Aracı</strong>
@@ -2915,7 +2872,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -2953,7 +2910,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -2965,7 +2922,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/palindrome-checker"
+                href="{% url "palindrome_checker" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Palindrom Denetleyicisi</strong>
@@ -2992,7 +2949,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -3006,6 +2963,8 @@
         </div>
       </div>
 
+
+      <!--CONVERTER TOOLS-->
       <div
         class="card mt-5 mb-4 position-relative"
         data-category="converter_tools"
@@ -3029,13 +2988,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M32 96l320 0V32c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l96 96c6 6 9.4 14.1 9.4 22.6s-3.4 16.6-9.4 22.6l-96 96c-9.2 9.2-22.9 11.9-34.9 6.9s-19.8-16.6-19.8-29.6V160L32 160c-17.7 0-32-14.3-32-32s14.3-32 32-32zM480 352c17.7 0 32 14.3 32 32s-14.3 32-32 32H160v64c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-96-96c-6-6-9.4-14.1-9.4-22.6s3.4-16.6 9.4-22.6l96-96c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 64H480z"
                   ></path></svg
-                ><!-- <i class="fas fa-exchange-alt fa-fw" style="color: #10b981"></i> Font Awesome fontawesome.com -->
+                >
               </div>
 
               <div class="text-truncate ml-3">
@@ -3068,13 +3027,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z"
                   ></path></svg
-                ><!-- <i class="fas fa-fw fa-lg fa-circle-chevron-down"></i> Font Awesome fontawesome.com -->
+                >
               </a>
             </div>
           </div>
@@ -3111,19 +3070,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"
                   ></path></svg
-                ><!-- <i class="fab fa-codepen fa-fw" style="color: #10b981"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/base64-encoder"
+                href="{% url "base64_encoder" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Base64 Kodlayıcı</strong>
@@ -3149,7 +3108,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -3187,19 +3146,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"
                   ></path></svg
-                ><!-- <i class="fab fa-codepen fa-fw" style="color: #10b981"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/base64-decoder"
+                href="{% url "base64_decoder" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Base64 Kod Çözücü</strong>
@@ -3225,7 +3184,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -3263,7 +3222,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -3275,7 +3234,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/base64-to-image"
+                href="#to-image"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Base64'ü Görsele Çevir</strong>
@@ -3301,7 +3260,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -3339,7 +3298,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -3351,7 +3310,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/image-to-base64"
+                href="#o-base64"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Görseli Base64'e Çevir</strong>
@@ -3377,7 +3336,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -3415,7 +3374,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -3427,7 +3386,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/url-encoder"
+                href="{% url "url_encryption_tool" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>URL Şifreleme Aracı</strong>
@@ -3453,13 +3412,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
                   ></path></svg
-                ><!-- <i class="fas fa-fw fa-sm fa-eye mr-1"></i> Font Awesome fontawesome.com -->
+                >
                 10
               </div>
             </div>
@@ -3491,19 +3450,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"
                   ></path></svg
-                ><!-- <i class="fas fa-link fa-fw" style="color: #10b981"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/url-decoder"
+                href="{% url "url_decryption_tool" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>URL Şifre Çözme Aracı</strong>
@@ -3529,13 +3488,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
                   ></path></svg
-                ><!-- <i class="fas fa-fw fa-sm fa-eye mr-1"></i> Font Awesome fontawesome.com -->
+                >
                 8
               </div>
             </div>
@@ -3567,19 +3526,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M339.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L568.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S517.7-4.4 499.1 9.6L262.4 187.2c-24 18-38.2 46.1-38.4 76.1L339.3 367.1zm-19.6 25.4l-116-104.4C143.9 290.3 96 339.6 96 400c0 3.9 .2 7.8 .6 11.6C98.4 429.1 86.4 448 68.8 448H64c-17.7 0-32 14.3-32 32s14.3 32 32 32H208c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"
                   ></path></svg
-                ><!-- <i class="fas fa-paint-brush fa-fw" style="color: #10b981"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/color-converter"
+                href="{% url "color_converter" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Renk Çevirici</strong>
@@ -3605,13 +3564,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
                   ></path></svg
-                ><!-- <i class="fas fa-fw fa-sm fa-eye mr-1"></i> Font Awesome fontawesome.com -->
+                >
                 8
               </div>
             </div>
@@ -3643,19 +3602,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M24 56c0-13.3 10.7-24 24-24H80c13.3 0 24 10.7 24 24V176h16c13.3 0 24 10.7 24 24s-10.7 24-24 24H40c-13.3 0-24-10.7-24-24s10.7-24 24-24H56V80H48C34.7 80 24 69.3 24 56zM86.7 341.2c-6.5-7.4-18.3-6.9-24 1.2L51.5 357.9c-7.7 10.8-22.7 13.3-33.5 5.6s-13.3-22.7-5.6-33.5l11.1-15.6c23.7-33.2 72.3-35.6 99.2-4.9c21.3 24.4 20.8 60.9-1.1 84.7L86.8 432H120c13.3 0 24 10.7 24 24s-10.7 24-24 24H32c-9.5 0-18.2-5.6-22-14.4s-2.1-18.9 4.3-25.9l72-78c5.3-5.8 5.4-14.6 .3-20.5zM224 64H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H224c-17.7 0-32-14.3-32-32s14.3-32 32-32zm0 160H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H224c-17.7 0-32-14.3-32-32s14.3-32 32-32zm0 160H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H224c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
                   ></path></svg
-                ><!-- <i class="fas fa-list-ol fa-fw" style="color: #10b981"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/binary-converter"
+                href="{% url "binary_converter" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Binary Çevirici</strong>
@@ -3682,13 +3641,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
                   ></path></svg
-                ><!-- <i class="fas fa-fw fa-sm fa-eye mr-1"></i> Font Awesome fontawesome.com -->
+                >
                 9
               </div>
             </div>
@@ -3720,19 +3679,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zm160 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM128 288a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm32 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM320 192a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm32 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM320 384a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"
                   ></path></svg
-                ><!-- <i class="fas fa-dice-six fa-fw" style="color: #10b981"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/hex-converter"
+                href="{% url "hex_converter" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Onaltılık (Hex) Dönüştürücü</strong>
@@ -3759,13 +3718,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
                   ></path></svg
-                ><!-- <i class="fas fa-fw fa-sm fa-eye mr-1"></i> Font Awesome fontawesome.com -->
+                >
                 8
               </div>
             </div>
@@ -3797,19 +3756,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M32 64C14.3 64 0 78.3 0 96s14.3 32 32 32H47.3l89.6 128L47.3 384H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H64c10.4 0 20.2-5.1 26.2-13.6L176 311.8l85.8 122.6c6 8.6 15.8 13.6 26.2 13.6h32c17.7 0 32-14.3 32-32s-14.3-32-32-32H304.7L215.1 256l89.6-128H320c17.7 0 32-14.3 32-32s-14.3-32-32-32H288c-10.4 0-20.2 5.1-26.2 13.6L176 200.2 90.2 77.6C84.2 69.1 74.4 64 64 64H32zM480 320c0-11.1-5.7-21.4-15.2-27.2s-21.2-6.4-31.1-1.4l-32 16c-15.8 7.9-22.2 27.1-14.3 42.9C393 361.5 404.3 368 416 368v80c-17.7 0-32 14.3-32 32s14.3 32 32 32h32 32c17.7 0 32-14.3 32-32s-14.3-32-32-32V320z"
                   ></path></svg
-                ><!-- <i class="fas fa-subscript fa-fw" style="color: #10b981"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/ascii-converter"
+                href="{% url "ascii_converter" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Ascii Dönüştürücü</strong>
@@ -3836,13 +3795,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
                   ></path></svg
-                ><!-- <i class="fas fa-fw fa-sm fa-eye mr-1"></i> Font Awesome fontawesome.com -->
+                >
                 17
               </div>
             </div>
@@ -3874,19 +3833,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M480 32c0-11.1-5.7-21.4-15.2-27.2s-21.2-6.4-31.1-1.4l-32 16c-15.8 7.9-22.2 27.1-14.3 42.9C393 73.5 404.3 80 416 80v80c-17.7 0-32 14.3-32 32s14.3 32 32 32h32 32c17.7 0 32-14.3 32-32s-14.3-32-32-32V32zM32 64C14.3 64 0 78.3 0 96s14.3 32 32 32H47.3l89.6 128L47.3 384H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H64c10.4 0 20.2-5.1 26.2-13.6L176 311.8l85.8 122.6c6 8.6 15.8 13.6 26.2 13.6h32c17.7 0 32-14.3 32-32s-14.3-32-32-32H304.7L215.1 256l89.6-128H320c17.7 0 32-14.3 32-32s-14.3-32-32-32H288c-10.4 0-20.2 5.1-26.2 13.6L176 200.2 90.2 77.6C84.2 69.1 74.4 64 64 64H32z"
                   ></path></svg
-                ><!-- <i class="fas fa-superscript fa-fw" style="color: #10b981"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/decimal-converter"
+                href="{% url "decimal_converter" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Ondalık Dönüştürücü</strong>
@@ -3913,13 +3872,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
                   ></path></svg
-                ><!-- <i class="fas fa-fw fa-sm fa-eye mr-1"></i> Font Awesome fontawesome.com -->
+                >
                 9
               </div>
             </div>
@@ -3951,19 +3910,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M450.7 38c8.3 6 13.3 15.7 13.3 26v96h16c17.7 0 32 14.3 32 32s-14.3 32-32 32H432 384c-17.7 0-32-14.3-32-32s14.3-32 32-32h16V108.4l-5.9 2c-16.8 5.6-34.9-3.5-40.5-20.2s3.5-34.9 20.2-40.5l48-16c9.8-3.3 20.5-1.6 28.8 4.4zM160 32c9 0 17.5 3.8 23.6 10.4l88 96c11.9 13 11.1 33.3-2 45.2s-33.3 11.1-45.2-2L192 146.3V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V146.3L95.6 181.6c-11.9 13-32.2 13.9-45.2 2s-13.9-32.2-2-45.2l88-96C142.5 35.8 151 32 160 32zM445.7 364.9A32 32 0 1 0 418.3 307a32 32 0 1 0 27.4 57.9zm-40.7 54.9C369.6 408.4 344 375.2 344 336c0-48.6 39.4-88 88-88s88 39.4 88 88c0 23.5-7.5 46.3-21.5 65.2L449.7 467c-10.5 14.2-30.6 17.2-44.8 6.7s-17.2-30.6-6.7-44.8l6.8-9.2z"
                   ></path></svg
-                ><!-- <i class="fas fa-sort-numeric-up fa-fw" style="color: #10b981"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/octal-converter"
+                href="{% url "octal_converter" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Sekizli (Octal) Dönüştürücü</strong>
@@ -3990,13 +3949,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
                   ></path></svg
-                ><!-- <i class="fas fa-fw fa-sm fa-eye mr-1"></i> Font Awesome fontawesome.com -->
+                >
                 7
               </div>
             </div>
@@ -4028,19 +3987,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z"
                   ></path></svg
-                ><!-- <i class="fas fa-ellipsis-h fa-fw" style="color: #10b981"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/morse-converter"
+                href="{% url "mors_converter" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Mors Dönüştürme Aracı</strong>
@@ -4066,7 +4025,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -4104,19 +4063,19 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M151.6 469.6C145.5 476.2 137 480 128 480s-17.5-3.8-23.6-10.4l-88-96c-11.9-13-11.1-33.3 2-45.2s33.3-11.1 45.2 2L96 365.7V64c0-17.7 14.3-32 32-32s32 14.3 32 32V365.7l32.4-35.4c11.9-13 32.2-13.9 45.2-2s13.9 32.2 2 45.2l-88 96zM320 480c-17.7 0-32-14.3-32-32s14.3-32 32-32h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H320zm0-128c-17.7 0-32-14.3-32-32s14.3-32 32-32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H320zm0-128c-17.7 0-32-14.3-32-32s14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H320zm0-128c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H320z"
                   ></path></svg
-                ><!-- <i class="fas fa-sort-amount-down fa-fw" style="color: #10b981"></i> Font Awesome fontawesome.com -->
+                >
               </div>
             </div>
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/number-to-words-converter"
+                href="{% url "number_to_word_translation" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Sayıdan Kelimeye Çeviri</strong>
@@ -4142,7 +4101,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -4179,13 +4138,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M308.5 135.3c7.1-6.3 9.9-16.2 6.2-25c-2.3-5.3-4.8-10.5-7.6-15.5L304 89.4c-3-5-6.3-9.9-9.8-14.6c-5.7-7.6-15.7-10.1-24.7-7.1l-28.2 9.3c-10.7-8.8-23-16-36.2-20.9L199 27.1c-1.9-9.3-9.1-16.7-18.5-17.8C173.9 8.4 167.2 8 160.4 8h-.7c-6.8 0-13.5 .4-20.1 1.2c-9.4 1.1-16.6 8.6-18.5 17.8L115 56.1c-13.3 5-25.5 12.1-36.2 20.9L50.5 67.8c-9-3-19-.5-24.7 7.1c-3.5 4.7-6.8 9.6-9.9 14.6l-3 5.3c-2.8 5-5.3 10.2-7.6 15.6c-3.7 8.7-.9 18.6 6.2 25l22.2 19.8C32.6 161.9 32 168.9 32 176s.6 14.1 1.7 20.9L11.5 216.7c-7.1 6.3-9.9 16.2-6.2 25c2.3 5.3 4.8 10.5 7.6 15.6l3 5.2c3 5.1 6.3 9.9 9.9 14.6c5.7 7.6 15.7 10.1 24.7 7.1l28.2-9.3c10.7 8.8 23 16 36.2 20.9l6.1 29.1c1.9 9.3 9.1 16.7 18.5 17.8c6.7 .8 13.5 1.2 20.4 1.2s13.7-.4 20.4-1.2c9.4-1.1 16.6-8.6 18.5-17.8l6.1-29.1c13.3-5 25.5-12.1 36.2-20.9l28.2 9.3c9 3 19 .5 24.7-7.1c3.5-4.7 6.8-9.5 9.8-14.6l3.1-5.4c2.8-5 5.3-10.2 7.6-15.5c3.7-8.7 .9-18.6-6.2-25l-22.2-19.8c1.1-6.8 1.7-13.8 1.7-20.9s-.6-14.1-1.7-20.9l22.2-19.8zM112 176a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM504.7 500.5c6.3 7.1 16.2 9.9 25 6.2c5.3-2.3 10.5-4.8 15.5-7.6l5.4-3.1c5-3 9.9-6.3 14.6-9.8c7.6-5.7 10.1-15.7 7.1-24.7l-9.3-28.2c8.8-10.7 16-23 20.9-36.2l29.1-6.1c9.3-1.9 16.7-9.1 17.8-18.5c.8-6.7 1.2-13.5 1.2-20.4s-.4-13.7-1.2-20.4c-1.1-9.4-8.6-16.6-17.8-18.5L583.9 307c-5-13.3-12.1-25.5-20.9-36.2l9.3-28.2c3-9 .5-19-7.1-24.7c-4.7-3.5-9.6-6.8-14.6-9.9l-5.3-3c-5-2.8-10.2-5.3-15.6-7.6c-8.7-3.7-18.6-.9-25 6.2l-19.8 22.2c-6.8-1.1-13.8-1.7-20.9-1.7s-14.1 .6-20.9 1.7l-19.8-22.2c-6.3-7.1-16.2-9.9-25-6.2c-5.3 2.3-10.5 4.8-15.6 7.6l-5.2 3c-5.1 3-9.9 6.3-14.6 9.9c-7.6 5.7-10.1 15.7-7.1 24.7l9.3 28.2c-8.8 10.7-16 23-20.9 36.2L315.1 313c-9.3 1.9-16.7 9.1-17.8 18.5c-.8 6.7-1.2 13.5-1.2 20.4s.4 13.7 1.2 20.4c1.1 9.4 8.6 16.6 17.8 18.5l29.1 6.1c5 13.3 12.1 25.5 20.9 36.2l-9.3 28.2c-3 9-.5 19 7.1 24.7c4.7 3.5 9.5 6.8 14.6 9.8l5.4 3.1c5 2.8 10.2 5.3 15.5 7.6c8.7 3.7 18.6 .9 25-6.2l19.8-22.2c6.8 1.1 13.8 1.7 20.9 1.7s14.1-.6 20.9-1.7l19.8 22.2zM464 304a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
                   ></path></svg
-                ><!-- <i class="fas fa-cogs fa-fw" style="color: #0ea5e9"></i> Font Awesome fontawesome.com -->
+                >
               </div>
 
               <div class="text-truncate ml-3">
@@ -4218,7 +4177,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -4261,7 +4220,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -4273,7 +4232,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/paypal-link-generator"
+                href="#link-generator"
                 class="stretched-link text-decoration-none"
               >
                 <strong>PayPal Ödeme Bağlantısı Oluşturma Aracı</strong>
@@ -4299,13 +4258,13 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
                     d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
                   ></path></svg
-                ><!-- <i class="fas fa-fw fa-sm fa-eye mr-1"></i> Font Awesome fontawesome.com -->
+                >
                 9
               </div>
             </div>
@@ -4337,7 +4296,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -4349,7 +4308,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/signature-generator"
+                href="{% url "paypal_payment_link_generator" %}"
                 class="stretched-link text-decoration-none"
               >
                 <strong>İmza Oluşturma Aracı</strong>
@@ -4375,7 +4334,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -4413,7 +4372,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -4425,7 +4384,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/mailto-link-generator"
+                href="#link-generator"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Mailto Bağlantı Oluşturma Aracı</strong>
@@ -4452,7 +4411,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -4490,7 +4449,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -4502,7 +4461,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/utm-link-generator"
+                href="#k-generator"
                 class="stretched-link text-decoration-none"
               >
                 <strong>UTM Bağlantı Oluşturucu</strong>
@@ -4529,7 +4488,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -4567,7 +4526,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -4579,7 +4538,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/whatsapp-link-generator"
+                href="#p-link-generator"
                 class="stretched-link text-decoration-none"
               >
                 <strong>WhatsApp Bağlantı Oluşturucu</strong>
@@ -4605,7 +4564,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -4643,7 +4602,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -4655,7 +4614,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/youtube-timestamp-link-generator"
+                href="#-timestamp-link-generator"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Youtube Zaman Damgası Oluşturucu</strong>
@@ -4682,7 +4641,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -4720,7 +4679,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -4732,7 +4691,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/slug-generator"
+                href="#or"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Kısa URL Oluşturma Aracı</strong>
@@ -4758,7 +4717,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -4796,7 +4755,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -4808,7 +4767,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/lorem-ipsum-generator"
+                href="#psum-generator"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Lorem Ipsum Oluşturucu</strong>
@@ -4834,7 +4793,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -4872,7 +4831,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -4884,7 +4843,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/password-generator"
+                href="#or"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Parola Oluşturma Aracı</strong>
@@ -4910,7 +4869,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -4948,7 +4907,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -4960,7 +4919,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/random-number-generator"
+                href="#number-generator"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Rastgele Numara Oluşturucu</strong>
@@ -4986,7 +4945,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5024,7 +4983,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5036,7 +4995,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/uuid-v4-generator"
+                href="#-generator"
                 class="stretched-link text-decoration-none"
               >
                 <strong>UUID v4 Oluşturucu</strong>
@@ -5063,7 +5022,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5101,7 +5060,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5113,7 +5072,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/bcrypt-generator"
+                href="#or"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Bcrypt Oluşturucu</strong>
@@ -5140,7 +5099,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5178,7 +5137,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5190,7 +5149,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/md2-generator"
+                href="#or"
                 class="stretched-link text-decoration-none"
               >
                 <strong>MD2 Oluşturucu</strong>
@@ -5217,7 +5176,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5255,7 +5214,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5267,7 +5226,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/md4-generator"
+                href="#or"
                 class="stretched-link text-decoration-none"
               >
                 <strong>MD4 Oluşturucu</strong>
@@ -5293,7 +5252,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5331,7 +5290,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5343,7 +5302,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/md5-generator"
+                href="#or"
                 class="stretched-link text-decoration-none"
               >
                 <strong>MD5 Oluşturucu</strong>
@@ -5370,7 +5329,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5408,7 +5367,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5420,7 +5379,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/whirlpool-generator"
+                href="#or"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Whirlpool Oluşturucu</strong>
@@ -5446,7 +5405,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5484,7 +5443,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5496,7 +5455,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/sha1-generator"
+                href="#or"
                 class="stretched-link text-decoration-none"
               >
                 <strong>SHA-1 Oluşturucu</strong>
@@ -5522,7 +5481,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5560,7 +5519,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5572,7 +5531,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/sha224-generator"
+                href="#or"
                 class="stretched-link text-decoration-none"
               >
                 <strong>SHA-224 Oluşturucu</strong>
@@ -5598,7 +5557,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5636,7 +5595,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5648,7 +5607,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/sha256-generator"
+                href="#or"
                 class="stretched-link text-decoration-none"
               >
                 <strong>SHA-256 Oluşturucu</strong>
@@ -5674,7 +5633,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5712,7 +5671,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5724,7 +5683,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/sha384-generator"
+                href="#or"
                 class="stretched-link text-decoration-none"
               >
                 <strong>SHA-384 Oluşturucu</strong>
@@ -5750,7 +5709,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5788,7 +5747,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5800,7 +5759,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/sha512-generator"
+                href="#or"
                 class="stretched-link text-decoration-none"
               >
                 <strong>SHA-512 Oluşturucu</strong>
@@ -5826,7 +5785,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5864,7 +5823,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5876,7 +5835,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/sha512-224-generator"
+                href="#224-generator"
                 class="stretched-link text-decoration-none"
               >
                 <strong>SHA-512/224 Oluşturucu</strong>
@@ -5902,7 +5861,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5940,7 +5899,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -5952,7 +5911,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/sha512-256-generator"
+                href="#256-generator"
                 class="stretched-link text-decoration-none"
               >
                 <strong>SHA-512/256 Oluşturucu</strong>
@@ -5978,7 +5937,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6016,7 +5975,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6028,7 +5987,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/sha3-224-generator"
+                href="#4-generator"
                 class="stretched-link text-decoration-none"
               >
                 <strong>SHA-3/224 Oluşturucu</strong>
@@ -6054,7 +6013,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6092,7 +6051,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6104,7 +6063,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/sha3-256-generator"
+                href="#6-generator"
                 class="stretched-link text-decoration-none"
               >
                 <strong>SHA-3/256 Oluşturucu</strong>
@@ -6130,7 +6089,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6168,7 +6127,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6180,7 +6139,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/sha3-384-generator"
+                href="#4-generator"
                 class="stretched-link text-decoration-none"
               >
                 <strong>SHA-3/384 Oluşturucu</strong>
@@ -6206,7 +6165,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6244,7 +6203,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6256,7 +6215,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/sha3-512-generator"
+                href="#2-generator"
                 class="stretched-link text-decoration-none"
               >
                 <strong>SHA-3/512 Oluşturucu</strong>
@@ -6282,7 +6241,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6319,7 +6278,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6359,7 +6318,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6402,7 +6361,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6414,7 +6373,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/html-minifier"
+                href="#r"
                 class="stretched-link text-decoration-none"
               >
                 <strong>HTML Küçültme Aracı</strong>
@@ -6441,7 +6400,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6479,7 +6438,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6491,7 +6450,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/css-minifier"
+                href="#r"
                 class="stretched-link text-decoration-none"
               >
                 <strong>CSS Küçültme Aracı</strong>
@@ -6517,7 +6476,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6555,7 +6514,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6567,7 +6526,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/js-minifier"
+                href="#r"
                 class="stretched-link text-decoration-none"
               >
                 <strong>JS Küçültme Aracı</strong>
@@ -6593,7 +6552,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6631,7 +6590,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6643,7 +6602,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/json-validator-beautifier"
+                href="#lidator-beautifier"
                 class="stretched-link text-decoration-none"
               >
                 <strong>JSON Doğrulama &amp; İyileştirme</strong>
@@ -6669,7 +6628,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6707,7 +6666,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6719,7 +6678,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/sql-beautifier"
+                href="#ier"
                 class="stretched-link text-decoration-none"
               >
                 <strong>SQL Kod Biçimlendirme &amp; İyileştirme</strong>
@@ -6745,7 +6704,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6783,7 +6742,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6795,7 +6754,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/html-entity-converter"
+                href="#tity-converter"
                 class="stretched-link text-decoration-none"
               >
                 <strong>HTML Entity Dönüştürücü</strong>
@@ -6822,7 +6781,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6860,7 +6819,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6872,7 +6831,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/bbcode-to-html"
+                href="#to-html"
                 class="stretched-link text-decoration-none"
               >
                 <strong>BBCode'u HTML'e Dönüştürme</strong>
@@ -6898,7 +6857,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6936,7 +6895,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -6948,7 +6907,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/markdown-to-html"
+                href="#n-to-html"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Markdown HTML Dönüştürücü</strong>
@@ -6974,7 +6933,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7012,7 +6971,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7024,7 +6983,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/html-tags-remover"
+                href="#gs-remover"
                 class="stretched-link text-decoration-none"
               >
                 <strong>HTML Etiket Silici</strong>
@@ -7050,7 +7009,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7088,7 +7047,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7100,7 +7059,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/user-agent-parser"
+                href="#ent-parser"
                 class="stretched-link text-decoration-none"
               >
                 <strong>User Agent Sorgulama</strong>
@@ -7127,7 +7086,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7165,7 +7124,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7177,7 +7136,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/url-parser"
+                href="#
                 class="stretched-link text-decoration-none"
               >
                 <strong>Bağlantı Ayrıştırıcı</strong>
@@ -7203,7 +7162,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7240,7 +7199,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7279,7 +7238,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7322,7 +7281,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7334,7 +7293,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/image-optimizer"
+                href="#er"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Resim Optimize Aracı</strong>
@@ -7361,7 +7320,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7399,7 +7358,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7411,7 +7370,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/png-to-jpg"
+                href="#jpg"
                 class="stretched-link text-decoration-none"
               >
                 <strong>PNG -&gt; JPG Dönüştürücü</strong>
@@ -7437,7 +7396,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7475,7 +7434,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7487,7 +7446,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/png-to-webp"
+                href="#webp"
                 class="stretched-link text-decoration-none"
               >
                 <strong>PNG -&gt; WEBP Dönüştürücü</strong>
@@ -7513,7 +7472,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7551,7 +7510,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7563,7 +7522,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/png-to-bmp"
+                href="#bmp"
                 class="stretched-link text-decoration-none"
               >
                 <strong>PNG -&gt; BMP Dönüştürücü</strong>
@@ -7589,7 +7548,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7627,7 +7586,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7639,7 +7598,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/png-to-gif"
+                href="#gif"
                 class="stretched-link text-decoration-none"
               >
                 <strong>PNG -&gt; GIF Dönüştürücü</strong>
@@ -7665,7 +7624,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7703,7 +7662,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7715,7 +7674,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/png-to-ico"
+                href="#ico"
                 class="stretched-link text-decoration-none"
               >
                 <strong>PNG -&gt; ICO Dönüştürücü</strong>
@@ -7741,7 +7700,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7779,7 +7738,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7791,7 +7750,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/jpg-to-png"
+                href="#png"
                 class="stretched-link text-decoration-none"
               >
                 <strong>JPG -&gt; PNG Dönüştürücü</strong>
@@ -7817,7 +7776,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7855,7 +7814,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7867,7 +7826,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/jpg-to-webp"
+                href="#webp"
                 class="stretched-link text-decoration-none"
               >
                 <strong>JPG -&gt; WEBP Dönüştürücü</strong>
@@ -7893,7 +7852,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7931,7 +7890,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -7943,7 +7902,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/jpg-to-gif"
+                href="#gif"
                 class="stretched-link text-decoration-none"
               >
                 <strong>JPG -&gt; GIF Dönüştürücü</strong>
@@ -7969,7 +7928,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8007,7 +7966,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8019,7 +7978,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/jpg-to-ico"
+                href="#ico"
                 class="stretched-link text-decoration-none"
               >
                 <strong>JPG -&gt; ICO Dönüştürücü</strong>
@@ -8045,7 +8004,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8083,7 +8042,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8095,7 +8054,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/jpg-to-bmp"
+                href="#bmp"
                 class="stretched-link text-decoration-none"
               >
                 <strong>JPG -&gt; BMP Dönüştürücü</strong>
@@ -8121,7 +8080,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8159,7 +8118,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8171,7 +8130,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/webp-to-jpg"
+                href="#-jpg"
                 class="stretched-link text-decoration-none"
               >
                 <strong>WEBP -&gt; JPG Dönüştürücü</strong>
@@ -8197,7 +8156,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8235,7 +8194,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8247,7 +8206,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/webp-to-gif"
+                href="#-gif"
                 class="stretched-link text-decoration-none"
               >
                 <strong>WEBP -&gt; GIF Dönüştürücü</strong>
@@ -8273,7 +8232,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8311,7 +8270,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8323,7 +8282,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/webp-to-png"
+                href="#-png"
                 class="stretched-link text-decoration-none"
               >
                 <strong>WEBP -&gt; PNG Dönüştürücü</strong>
@@ -8349,7 +8308,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8387,7 +8346,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8399,7 +8358,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/webp-to-bmp"
+                href="#-bmp"
                 class="stretched-link text-decoration-none"
               >
                 <strong>WEBP -&gt; BMP Dönüştürücü</strong>
@@ -8425,7 +8384,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8463,7 +8422,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8475,7 +8434,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/webp-to-ico"
+                href="#-ico"
                 class="stretched-link text-decoration-none"
               >
                 <strong>WEBP -&gt; ICO Dönüştürücü</strong>
@@ -8501,7 +8460,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8539,7 +8498,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8551,7 +8510,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/bmp-to-jpg"
+                href="#jpg"
                 class="stretched-link text-decoration-none"
               >
                 <strong>BMP -&gt; JPG Dönüştürücü</strong>
@@ -8577,7 +8536,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8615,7 +8574,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8627,7 +8586,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/bmp-to-gif"
+                href="#gif"
                 class="stretched-link text-decoration-none"
               >
                 <strong>BMP -&gt; GIF Dönüştürücü</strong>
@@ -8653,7 +8612,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8691,7 +8650,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8703,7 +8662,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/bmp-to-png"
+                href="#png"
                 class="stretched-link text-decoration-none"
               >
                 <strong>BMP -&gt; PNG Dönüştürücü</strong>
@@ -8729,7 +8688,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8767,7 +8726,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8779,7 +8738,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/bmp-to-webp"
+                href="#webp"
                 class="stretched-link text-decoration-none"
               >
                 <strong>BMP -&gt; WEBP Dönüştürücü</strong>
@@ -8805,7 +8764,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8843,7 +8802,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8855,7 +8814,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/bmp-to-ico"
+                href="#ico"
                 class="stretched-link text-decoration-none"
               >
                 <strong>BMP -&gt; ICO Dönüştürücü</strong>
@@ -8881,7 +8840,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8919,7 +8878,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8931,7 +8890,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/ico-to-jpg"
+                href="#jpg"
                 class="stretched-link text-decoration-none"
               >
                 <strong>ICO -&gt; JPG Dönüştürücü</strong>
@@ -8957,7 +8916,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -8995,7 +8954,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9007,7 +8966,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/ico-to-gif"
+                href="#gif"
                 class="stretched-link text-decoration-none"
               >
                 <strong>ICO -&gt; GIF Dönüştürücü</strong>
@@ -9033,7 +8992,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9071,7 +9030,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9083,7 +9042,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/ico-to-png"
+                href="#png"
                 class="stretched-link text-decoration-none"
               >
                 <strong>ICO -&gt; PNG Dönüştürücü</strong>
@@ -9109,7 +9068,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9147,7 +9106,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9159,7 +9118,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/ico-to-webp"
+                href="#webp"
                 class="stretched-link text-decoration-none"
               >
                 <strong>ICO -&gt; WEBP Dönüştürücü</strong>
@@ -9185,7 +9144,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9223,7 +9182,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9235,7 +9194,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/ico-to-bmp"
+                href="#bmp"
                 class="stretched-link text-decoration-none"
               >
                 <strong>ICO -&gt; BMP Dönüştürücü</strong>
@@ -9261,7 +9220,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9299,7 +9258,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9311,7 +9270,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/gif-to-jpg"
+                href="#jpg"
                 class="stretched-link text-decoration-none"
               >
                 <strong>GIF -&gt; JPG Dönüştürücü</strong>
@@ -9337,7 +9296,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9375,7 +9334,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9387,7 +9346,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/gif-to-ico"
+                href="#ico"
                 class="stretched-link text-decoration-none"
               >
                 <strong>GIF -&gt; ICO Dönüştürücü</strong>
@@ -9413,7 +9372,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9451,7 +9410,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9463,7 +9422,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/gif-to-png"
+                href="#png"
                 class="stretched-link text-decoration-none"
               >
                 <strong>GIF -&gt; PNG Dönüştürücü</strong>
@@ -9489,7 +9448,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9527,7 +9486,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9539,7 +9498,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/gif-to-webp"
+                href="#webp"
                 class="stretched-link text-decoration-none"
               >
                 <strong>GIF -&gt; WEBP Dönüştürücü</strong>
@@ -9565,7 +9524,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9603,7 +9562,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9615,7 +9574,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/gif-to-bmp"
+                href="#bmp"
                 class="stretched-link text-decoration-none"
               >
                 <strong>GIF -&gt; BMP Dönüştürücü</strong>
@@ -9641,7 +9600,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9678,7 +9637,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9717,7 +9676,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9760,7 +9719,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9772,7 +9731,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/unix-timestamp-to-date"
+                href="#mestamp-to-date"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Unix Zaman Damgasını Tarihe Çevirme Aracı</strong>
@@ -9798,7 +9757,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9836,7 +9795,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9848,7 +9807,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/date-to-unix-timestamp"
+                href="#-unix-timestamp"
                 class="stretched-link text-decoration-none"
               >
                 <strong>Tarihten Unix Zaman Damgasına Çevirici</strong>
@@ -9874,7 +9833,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9911,7 +9870,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9950,7 +9909,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -9989,7 +9948,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -10001,7 +9960,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/youtube-thumbnail-downloader"
+                href="#-thumbnail-downloader"
                 class="stretched-link text-decoration-none"
               >
                 <strong>YouTube Thumbnail İndirici</strong>
@@ -10028,7 +9987,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -10066,7 +10025,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -10078,7 +10037,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/qr-code-reader"
+                href="#-reader"
                 class="stretched-link text-decoration-none"
               >
                 <strong>QR Kod Okuyucu (Karekod)</strong>
@@ -10104,7 +10063,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -10142,7 +10101,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -10154,7 +10113,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/barcode-reader"
+                href="#
                 class="stretched-link text-decoration-none"
               >
                 <strong>Barkod Okuyucu</strong>
@@ -10180,7 +10139,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -10218,7 +10177,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -10230,7 +10189,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/exif-reader"
+                href="#
                 class="stretched-link text-decoration-none"
               >
                 <strong>Exif Okuyucu</strong>
@@ -10256,7 +10215,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -10294,7 +10253,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"
@@ -10306,7 +10265,7 @@
 
             <div class="card-body text-truncate">
               <a
-                href="https://linkler.in/tools/color-picker"
+                href="#
                 class="stretched-link text-decoration-none"
               >
                 <strong>Renk Kodu Öğrenme</strong>
@@ -10333,7 +10292,7 @@
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  data-fa-i2svg=""
+  
                 >
                   <path
                     fill="currentColor"

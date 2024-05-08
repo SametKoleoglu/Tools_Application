@@ -14,11 +14,11 @@ def index(request):
             data = response.json()
             if data['status'] == 'fail':
                 error_message = data['message']
-                return render(request, 'IpControl/index.html', {'form': form, 'error_message': error_message})
+                return render(request, 'AuditingTools/IpControl.html', {'form': form, 'error_message': error_message})
             else:
                 country = data['country']
                 latitude = data['lat']
                 longitude = data['lon']
                 timezone = data['timezone']
-                return render(request, 'IpControl/index.html', {'form': form,'country': country, 'latitude': latitude, 'longitude': longitude, 'timezone': timezone,'data':data})
-    return render(request, 'IpControl/index.html', {'form': form})
+                return render(request, 'AuditingTools/IpControl.html', {'form': form,'country': country, 'latitude': latitude, 'longitude': longitude, 'timezone': timezone,'data':data})
+    return render(request, 'AuditingTools/IpControl.html', {'form': form})

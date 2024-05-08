@@ -30,4 +30,4 @@ def index(request):
         message = ""
 
     print(message)
-    return render(request, 'Brotli_Controller/index.html', {'form': form, 'message': message,'error': error,'isActive': isActive})
+    return render(request, 'AuditingTools/BrotliController.html', {'form': form, 'message': message,'error': error,'isActive': isActive})

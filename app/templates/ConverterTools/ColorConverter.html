@@ -1,0 +1,333 @@
+{% extends "partials/base.html" %} {% block header %}Renk Çevirici
+{% endblock header %} {% block content %}
+
+<div class="card">
+  <div class="card-body">
+    <form action="" method="post" role="form" data-gtm-form-interact-id="0">
+      {% csrf_token %}
+
+      <div class="form-group">
+        <label for="color"
+          ><svg
+            class="svg-inline--fa fa-palette fa-fw fa-sm text-muted mr-1"
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="palette"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="currentColor"
+              d="M512 256c0 .9 0 1.8 0 2.7c-.4 36.5-33.6 61.3-70.1 61.3H344c-26.5 0-48 21.5-48 48c0 3.4 .4 6.7 1 9.9c2.1 10.2 6.5 20 10.8 29.9c6.1 13.8 12.1 27.5 12.1 42c0 31.8-21.6 60.7-53.4 62c-3.5 .1-7 .2-10.6 .2C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-96a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 96a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"
+            ></path></svg
+          >
+          Renk</label
+        >
+        {{form}}
+        {% if error_message %}
+        <div class="text-danger my-2">Geçerli bir renk formatı algılanmadı.</div>
+        {% endif %}
+        <small class="form-text text-muted"
+          >Kabul Edilen Formatlar: HEX, HEX alpha, RGB, RGBA, HSV, HSL,
+          HSLA.</small
+        >
+      </div>
+
+      <button type="submit" name="submit" class="btn btn-block btn-primary">
+        Gönder
+      </button>
+    </form>
+  </div>
+</div>
+
+
+{% if click and not error_message %}
+<div class="mt-4">
+  <div class="table-responsive table-custom-container">
+    <table class="table table-custom">
+      <tbody>
+        <tr>
+          <td class="font-weight-bold">
+            <svg
+              class="svg-inline--fa fa-palette fa-fw fa-sm mr-1"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="palette"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              data-fa-i2svg=""
+            >
+              <path
+                fill="currentColor"
+                d="M512 256c0 .9 0 1.8 0 2.7c-.4 36.5-33.6 61.3-70.1 61.3H344c-26.5 0-48 21.5-48 48c0 3.4 .4 6.7 1 9.9c2.1 10.2 6.5 20 10.8 29.9c6.1 13.8 12.1 27.5 12.1 42c0 31.8-21.6 60.7-53.4 62c-3.5 .1-7 .2-10.6 .2C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-96a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 96a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"
+              ></path></svg
+            >
+            Renk
+          </td>
+          <td style="background: #ffffff"></td>
+          <td style="background: #ffffff"></td>
+        </tr>
+        <tr>
+          <td class="font-weight-bold">HEX</td>
+          <td class="text-nowrap">#ffffff</td>
+          <td>
+            <div class="d-flex justify-content-end">
+              <button
+                type="button"
+                class="btn btn-link text-secondary"
+                data-toggle="tooltip"
+                title=""
+                aria-label="Panoya Kopyala"
+                data-copy="Panoya Kopyala"
+                data-copied="Kopyalandı!"
+                data-clipboard-text="#ffffff"
+                data-original-title="Panoya Kopyala"
+              >
+                <svg
+                  class="svg-inline--fa fa-copy fa-fw fa-sm"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="copy"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  data-fa-i2svg=""
+                >
+                  <path
+                    fill="currentColor"
+                    d="M208 0H332.1c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9V336c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V48c0-26.5 21.5-48 48-48zM48 128h80v64H64V448H256V416h64v48c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48z"
+                  ></path></svg
+                >
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="font-weight-bold">HEX Alpha</td>
+          <td class="text-nowrap">#ffffffff</td>
+          <td>
+            <div class="d-flex justify-content-end">
+              <button
+                type="button"
+                class="btn btn-link text-secondary"
+                data-toggle="tooltip"
+                title=""
+                aria-label="Panoya Kopyala"
+                data-copy="Panoya Kopyala"
+                data-copied="Kopyalandı!"
+                data-clipboard-text="#ffffffff"
+                data-original-title="Panoya Kopyala"
+              >
+                <svg
+                  class="svg-inline--fa fa-copy fa-fw fa-sm"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="copy"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  data-fa-i2svg=""
+                >
+                  <path
+                    fill="currentColor"
+                    d="M208 0H332.1c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9V336c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V48c0-26.5 21.5-48 48-48zM48 128h80v64H64V448H256V416h64v48c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48z"
+                  ></path></svg
+                ><!-- <i class="fas fa-fw fa-sm fa-copy"></i> Font Awesome fontawesome.com -->
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="font-weight-bold">RGB</td>
+          <td class="text-nowrap">rgb(255,255,255)</td>
+          <td>
+            <div class="d-flex justify-content-end">
+              <button
+                type="button"
+                class="btn btn-link text-secondary"
+                data-toggle="tooltip"
+                title=""
+                aria-label="Panoya Kopyala"
+                data-copy="Panoya Kopyala"
+                data-copied="Kopyalandı!"
+                data-clipboard-text="rgb(255,255,255)"
+                data-original-title="Panoya Kopyala"
+              >
+                <svg
+                  class="svg-inline--fa fa-copy fa-fw fa-sm"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="copy"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  data-fa-i2svg=""
+                >
+                  <path
+                    fill="currentColor"
+                    d="M208 0H332.1c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9V336c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V48c0-26.5 21.5-48 48-48zM48 128h80v64H64V448H256V416h64v48c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48z"
+                  ></path></svg
+                ><!-- <i class="fas fa-fw fa-sm fa-copy"></i> Font Awesome fontawesome.com -->
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="font-weight-bold">RGBA</td>
+          <td class="text-nowrap">rgba(255,255,255,1)</td>
+          <td>
+            <div class="d-flex justify-content-end">
+              <button
+                type="button"
+                class="btn btn-link text-secondary"
+                data-toggle="tooltip"
+                title=""
+                aria-label="Panoya Kopyala"
+                data-copy="Panoya Kopyala"
+                data-copied="Kopyalandı!"
+                data-clipboard-text="rgba(255,255,255,1)"
+                data-original-title="Panoya Kopyala"
+              >
+                <svg
+                  class="svg-inline--fa fa-copy fa-fw fa-sm"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="copy"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  data-fa-i2svg=""
+                >
+                  <path
+                    fill="currentColor"
+                    d="M208 0H332.1c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9V336c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V48c0-26.5 21.5-48 48-48zM48 128h80v64H64V448H256V416h64v48c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48z"
+                  ></path></svg
+                ><!-- <i class="fas fa-fw fa-sm fa-copy"></i> Font Awesome fontawesome.com -->
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="font-weight-bold">HSV</td>
+          <td class="text-nowrap">hsv(0,0%,100%)</td>
+          <td>
+            <div class="d-flex justify-content-end">
+              <button
+                type="button"
+                class="btn btn-link text-secondary"
+                data-toggle="tooltip"
+                title=""
+                aria-label="Panoya Kopyala"
+                data-copy="Panoya Kopyala"
+                data-copied="Kopyalandı!"
+                data-clipboard-text="hsv(0,0%,100%)"
+                data-original-title="Panoya Kopyala"
+              >
+                <svg
+                  class="svg-inline--fa fa-copy fa-fw fa-sm"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="copy"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  data-fa-i2svg=""
+                >
+                  <path
+                    fill="currentColor"
+                    d="M208 0H332.1c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9V336c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V48c0-26.5 21.5-48 48-48zM48 128h80v64H64V448H256V416h64v48c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48z"
+                  ></path></svg
+                ><!-- <i class="fas fa-fw fa-sm fa-copy"></i> Font Awesome fontawesome.com -->
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="font-weight-bold">HSL</td>
+          <td class="text-nowrap">hsl(0,0%,100%)</td>
+          <td>
+            <div class="d-flex justify-content-end">
+              <button
+                type="button"
+                class="btn btn-link text-secondary"
+                data-toggle="tooltip"
+                title=""
+                aria-label="Panoya Kopyala"
+                data-copy="Panoya Kopyala"
+                data-copied="Kopyalandı!"
+                data-clipboard-text="hsl(0,0%,100%)"
+                data-original-title="Panoya Kopyala"
+              >
+                <svg
+                  class="svg-inline--fa fa-copy fa-fw fa-sm"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="copy"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  data-fa-i2svg=""
+                >
+                  <path
+                    fill="currentColor"
+                    d="M208 0H332.1c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9V336c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V48c0-26.5 21.5-48 48-48zM48 128h80v64H64V448H256V416h64v48c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48z"
+                  ></path></svg
+                ><!-- <i class="fas fa-fw fa-sm fa-copy"></i> Font Awesome fontawesome.com -->
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="font-weight-bold">HSLA</td>
+          <td class="text-nowrap">hsla(0,0%,100%,1)</td>
+          <td>
+            <div class="d-flex justify-content-end">
+              <button
+                type="button"
+                class="btn btn-link text-secondary"
+                data-toggle="tooltip"
+                title=""
+                aria-label="Panoya Kopyala"
+                data-copy="Panoya Kopyala"
+                data-copied="Kopyalandı!"
+                data-clipboard-text="hsla(0,0%,100%,1)"
+                data-original-title="Panoya Kopyala"
+              >
+                <svg
+                  class="svg-inline--fa fa-copy fa-fw fa-sm"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="copy"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  data-fa-i2svg=""
+                >
+                  <path
+                    fill="currentColor"
+                    d="M208 0H332.1c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9V336c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V48c0-26.5 21.5-48 48-48zM48 128h80v64H64V448H256V416h64v48c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48z"
+                  ></path></svg
+                ><!-- <i class="fas fa-fw fa-sm fa-copy"></i> Font Awesome fontawesome.com -->
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endif %}
+
+{% endblock content %} {% block cardContent %}Renk çevirici ile seçtiğiniz
+renkleri istediğiniz renk formatına çevirin.{% endblock cardContent %}

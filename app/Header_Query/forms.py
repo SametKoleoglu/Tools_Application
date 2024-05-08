@@ -1,8 +1,4 @@
-from django.forms import ModelForm
-from .models import Header_Query
+from django import forms
 
-
-class HeaderQueryForm(ModelForm):
-    class Meta:
-        model = Header_Query
-        fields = '__all__'
+class HeaderQuerierForm(forms.Form):
+    header = forms.CharField(label='', widget=forms.TextInput(attrs={'class': 'form-control'}))

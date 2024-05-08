@@ -11,7 +11,9 @@
     />
 
     <meta name="description" content="Ping a website, server or port.." />
-
+    <link href="https://linkler.in/themes/altum/assets/css/custom.css?v=4600" rel="stylesheet" media="screen,print">
+    <link href="https://linkler.in/themes/altum/assets/css/custom-bootstrap/bootstrap.min.css?v=4600" id="css_theme_style" rel="stylesheet" media="screen,print">
+    
     <style type="text/css">
       :host,
       :root {
@@ -868,18 +870,6 @@
 
     <link href="{% static "image/takimca_logo.png" %}" rel="shortcut icon" />
 
-    <link
-      href="https://linkler.in/themes/altum/assets/css/custom-bootstrap/bootstrap.min.css?v=4600"
-      id="css_theme_style"
-      rel="stylesheet"
-      media="screen,print"
-    />
-    <link
-      href="https://linkler.in/themes/altum/assets/css/custom.css?v=4600"
-      rel="stylesheet"
-      media="screen,print"
-    />
-    
   </head>
   <body>
     <div class="container">
@@ -887,10 +877,48 @@
 
       <main class="altum-animate altum-animate-fill-none altum-animate-fade-in">
         <div class="container">
-          {% block content %} 
-          
-          {% endblock content %}
+          <div class="row mb-4">
+            <div
+              class="col-12 col-lg d-flex align-items-center mb-3 mb-lg-0 text-truncate"
+            >
+              <h1 class="h4 m-0 text-truncate">
+                {% block header %} {% endblock header %}
+              </h1>
 
+              <div class="ml-2">
+                <span
+                  data-toggle="tooltip"
+                  title=""
+                  data-original-title="Herhangi bir dize girişini Base64 olarak kodlayın."
+                >
+                  <svg
+                    class="svg-inline--fa fa-circle-info fa-fw text-muted"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="circle-info"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {% block content %} {% endblock content %}
+
+          <div class="card mt-5">
+            <div class="card-body">
+              {% block cardContent %}{% endblock cardContent %}
+            </div>
+          </div>
 
           <div class="mt-5">
             <h2 class="h4 mb-4">Paylaş</h2>

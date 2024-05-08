@@ -2,12 +2,12 @@ from django.shortcuts import render
 import requests
 
 
-from .forms import HeaderQueryForm
+from .forms import HeaderQuerierForm
 
 
 def index(request):
     if request.method == 'POST':
-        form = HeaderQueryForm(request.POST)
+        form = HeaderQuerierForm(request.POST)
         if form.is_valid():
             url = form.cleaned_data['url']
 
@@ -17,8 +17,8 @@ def index(request):
             except requests.exceptions.RequestException:
                 headers = None
 
-            return render(request, 'header_inspection/result.html', {'form': form, 'headers': headers})
+            return render(request, 'AuditingTools/HeaderQuerier.html', {'form': form, 'headers': headers})
     else:
-        form = HeaderQueryForm()
+        form = HeaderQuerierForm()
 
-    return render(request, 'header_inspection/index.html', {'form': form})
+    return render(request, 'AuditingTools/HeaderQuerier.html', {'form': form})

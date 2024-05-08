@@ -20,4 +20,4 @@ def index(request):
         except (requests.exceptions.RequestException, urllib3.exceptions.LocationParseError)as e:
             error = str(e)
             print(error)
-    return render(request, 'Meta_Tag_Finder/index.html', {'form': form, 'meta_tags': meta_tags, 'error': error})
+    return render(request, 'AuditingTools/MetaTagFinder.html', {'form': form, 'meta_tags': meta_tags, 'error': error})

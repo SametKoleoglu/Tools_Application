@@ -17,7 +17,6 @@ def index(request):
                     with context.wrap_socket(sock, server_hostname=host_or_ip) as ssock:
                         cert = ssock.getpeercert()
                         cert = dict(cert)
-                        print(cert)
                         result = {
                             'status': True,
                             'creation': cert['notBefore'],
@@ -33,4 +32,4 @@ def index(request):
                 error = True
     else:
         form = SSLQueryForm()
-    return render(request, 'SSL_Querier/index.html', {'form': form, 'result': result, 'error': error})
+    return render(request, 'AuditingTools/SSLQuerier.html', {'form': form, 'result': result, 'error': error})

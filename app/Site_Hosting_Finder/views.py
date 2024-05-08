@@ -19,7 +19,7 @@ def index(request):
             error = f'Invalid host name. Please enter a valid host name! . {e}'
             print(error)
             success = False
-            return render(request, 'Site_Hosting_Finder/index.html', {'form': form, 'error': error, 'success': success})
+            return render(request, 'AuditingTools/SiteHostingFinder.html', {'form': form, 'error': error, 'success': success})
 
         url = f"http://ip-api.com/json/{ip_address}"
         print(url)
@@ -40,6 +40,6 @@ def index(request):
             'time_zone': data.get('timezone', 'N/A'),
             'success': True
         }
-        return render(request, 'Site_Hosting_Finder/index.html', context)
+        return render(request, 'AuditingTools/SiteHostingFinder.html', context)
 
-    return render(request, 'Site_Hosting_Finder/index.html', {'form': form})
+    return render(request, 'AuditingTools/SiteHostingFinder.html', {'form': form})

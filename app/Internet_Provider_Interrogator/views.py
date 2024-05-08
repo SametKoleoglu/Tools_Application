@@ -14,8 +14,8 @@ def index(request):
             data = response.json()
             if data['status'] == 'fail':
                 error_message = data['message']
-                return render(request, 'Internet_Provider_Interrogator/index.html', {'form': form, 'error_message': error_message})
+                return render(request, 'AuditingTools/InternetProviderInterrogator.html', {'form': form, 'error_message': error_message})
             else:
                 isp = data['isp']
-                return render(request, 'Internet_Provider_Interrogator/index.html', {'form': form, 'isp': isp,'data':data})
-    return render(request, 'Internet_Provider_Interrogator/index.html', {'form': form})
+                return render(request, 'AuditingTools/InternetProviderInterrogator.html', {'form': form, 'isp': isp,'data':data})
+    return render(request, 'AuditingTools/InternetProviderInterrogator.html', {'form': form})

@@ -27,11 +27,11 @@ def index(request):
                 'error': error,
                 'form': form
             }
-            return render(request, 'Secure_Connection_Inquiry/index.html', context)
+            return render(request, 'AuditingTools/SecureConnectionInquiry.html', context)
 
         except (requests.exceptions.RequestException, urllib3.exceptions.LocationParseError) as e:
             error = f'Error: {e}'
             print(error)
-            return render(request, 'Secure_Connection_Inquiry/index.html', {'form': form, 'error': error})
+            return render(request, 'AuditingTools/SecureConnectionInquiry.html', {'form': form, 'error': error})
 
-    return render(request, 'Secure_Connection_Inquiry/index.html', {'form': form})
+    return render(request, 'AuditingTools/SecureConnectionInquiry.html', {'form': form})
