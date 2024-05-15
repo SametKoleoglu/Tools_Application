@@ -1,0 +1,103 @@
+{% extends "partials/base.html" %} {% block header %}CSS Küçültme Aracı 
+{% endblock header %} {% block content %}
+
+<div class="card">
+  <div class="card-body">
+    <form action="" method="post" role="form">
+      {% csrf_token %}
+
+      <div class="form-group">
+        <label for="css"
+          ><svg
+            class="svg-inline--fa fa-css3 fa-fw fa-sm text-muted mr-1"
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fab"
+            data-icon="css3"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="currentColor"
+              d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"
+            ></path></svg
+          ><!-- <i class="fab fa-fw fa-css3 fa-sm text-muted mr-1"></i> Font Awesome fontawesome.com -->
+          CSS</label
+        >
+        {{form}}
+      </div>
+
+      <button type="submit" name="submit" class="btn btn-block btn-primary">
+        Gönder
+      </button>
+    </form>
+  </div>
+</div>
+
+{% if click %}
+
+<div class="mt-4">
+  <div class="table-responsive table-custom-container">
+    <table class="table table-custom">
+      <tbody>
+        <tr>
+          <td class="font-weight-bold">CSS Karakteri</td>
+          <td class="text-nowrap text-danger">{{original_length}}</td>
+        </tr>
+
+        <tr>
+          <td class="font-weight-bold">Küçültülmüş CSS Karakteri</td>
+          <td class="text-nowrap text-success">{{minified_length}} ({{saved_ratio}}%)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="mt-4">
+  <div class="card">
+    <div class="card-body">
+      <div class="form-group">
+        <div class="d-flex justify-content-between align-items-center">
+          <label for="result">Küçültülmüş CSS</label>
+          <div>
+            <button
+              type="button"
+              class="btn btn-link text-secondary"
+              data-toggle="tooltip"
+              title=""
+              aria-label="Panoya Kopyala"
+              data-copy="Panoya Kopyala"
+              data-copied="Kopyalandı!"
+              data-clipboard-target="#result"
+              data-clipboard-text=""
+              data-original-title="Panoya Kopyala"
+            >
+              <svg
+                class="svg-inline--fa fa-copy fa-fw fa-sm"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="copy"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M208 0H332.1c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9V336c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V48c0-26.5 21.5-48 48-48zM48 128h80v64H64V448H256V416h64v48c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48z"
+                ></path></svg
+              >
+            </button>
+          </div>
+        </div>
+        <textarea id="result" class="form-control">{{minified_css}}</textarea>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endif %} {% endblock content %} {% block cardContent %}CSS küçültme aracı ile
+css dosyalarınızı kolay bir şekilde sıkıştırın ve fazla kodlardan kurtulun. 
+{% endblock cardContent %}

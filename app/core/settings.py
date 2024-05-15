@@ -38,23 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'index',
-    'Ping_Service',
+    'AuditingTools',
     'Auth',
-    'Ip_Control',
-    'Whois_Inquiry',
-    'Brotli_Controller',
-    'SSL_Querier',
-    'HTTP2_Controller',
-    'Secure_Connection_Inquiry',
-    'Google_Cache_Checker',
-    'URL_Redirect_Checker',
-    'Password_Security_Checker',
-    'Meta_Tag_Finder',
-    'Site_Hosting_Finder',
-    'File_Mime_Type_Query',
     'TextTools',
     'ConverterTools',
-    'GeneratorTools'    
+    'GeneratorTools',
+    'DeveloperTools',    
 ]
 
 MIDDLEWARE = [
